@@ -1,0 +1,23 @@
+@import "compass/reset";
+@import "grid";
+
+/* Global Variables */
+$bg-color: #e6e6e6;
+$body-color: #747474;
+$highlight-color: #c76a54;
+$link-color: #549bc7;
+
+/* Global Classes */
+.wrapper {
+  margin: 0 auto;
+  width: $width;
+}
+
+/* Global Elements */
+a {
+  color: $link-color;
+}
+body {
+  background: $bg-color;
+  color: $body-color;
+}

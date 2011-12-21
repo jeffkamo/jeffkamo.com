@@ -1,0 +1,18 @@
+@import "base";
+
+header {
+  @include row;
+}
+
+section {
+  @include col(8);
+}
+
+aside {
+  @include col(4);
+  @include last;
+}
+
+footer {
+  @include row;
+}
