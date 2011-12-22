@@ -78,23 +78,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* prepend n blank columns */
 /* append n blank columns */
 /* Global Variables */
+/* Global Elements */
+/* line 26, ../sass/_base.scss */
+a {
+  border-bottom: 1px solid #549bc7;
+  color: #549bc7;
+  text-decoration: none;
+}
+
+/* line 31, ../sass/_base.scss */
+body {
+  background: #efefef;
+  color: #707070;
+  font-family: myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 22px;
+  line-height: 2.2rem;
+}
+
+/* line 40, ../sass/_base.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 43, ../sass/_base.scss */
+strong {
+  font-weight: bold;
+}
+
 /* Global Classes */
-/* line 11, ../sass/_base.scss */
+/* line 48, ../sass/_base.scss */
 .wrapper {
   margin: 0 auto;
   width: 978px;
-}
-
-/* Global Elements */
-/* line 17, ../sass/_base.scss */
-a {
-  color: #549bc7;
-}
-
-/* line 20, ../sass/_base.scss */
-body {
-  background: #e6e6e6;
-  color: #747474;
 }
 
 /* line 3, ../sass/application.scss */
@@ -102,26 +119,90 @@ header {
   float: left;
   clear: both;
   width: 978px;
+  background: #c7b696;
+  height: 350px;
 }
 
-/* line 7, ../sass/application.scss */
+/* line 10, ../sass/application.scss */
 section {
   float: left;
   width: 642px;
   margin-right: 30px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+/* line 15, ../sass/application.scss */
+section h2 {
+  border-bottom: 2px solid #707070;
+  font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 28px;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+/* line 16, ../sass/application.scss */
+section h3 {
+  font-family: myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+/* line 17, ../sass/application.scss */
+section h2, section h3 {
+  line-height: 1em;
+  font-weight: bold;
+}
+/* line 20, ../sass/application.scss */
+section .projects h2 {
+  border-bottom: 0;
+  border-top: 8px solid #707070;
+  font-size: 80px;
+  font-size: 8rem;
 }
 
-/* line 11, ../sass/application.scss */
+/* line 24, ../sass/application.scss */
 aside {
   float: left;
   width: 306px;
   margin-right: 30px;
   margin-right: 0;
+  font-size: 10px;
+  font-size: 1rem;
+  margin: 22px auto;
+}
+/* line 31, ../sass/application.scss */
+aside .silk {
+  box-shadow: 0 0 8px #AAA;
+  padding: 95px 0;
+  width: 282px;
+}
+/* line 32, ../sass/application.scss */
+aside .paper {
+  float: left;
+  width: 222px;
+  margin-right: 30px;
+  margin-right: 0;
+  background: white;
+  float: none;
+  padding: 30px 15px;
+}
+/* line 39, ../sass/application.scss */
+aside .paper h2 {
+  color: #549bc7;
+  font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 24px;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+/* line 41, ../sass/application.scss */
+aside .silk, aside .paper {
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-/* line 16, ../sass/application.scss */
+/* line 44, ../sass/application.scss */
 footer {
   float: left;
   clear: both;
   width: 978px;
+  background: #707070;
+  color: #efefef;
 }

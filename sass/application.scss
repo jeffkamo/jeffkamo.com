@@ -2,17 +2,48 @@
 
 header {
   @include row;
+  
+  background: #c7b696; // placeholder
+  height: 350px;
 }
 
 section {
   @include col(8);
+  margin-top: $px-line-base;
+  margin-bottom: $px-line-base;
+  
+  h2 { border-bottom: 2px solid $color-body; font-family: $font-condensed; font-size: $px-big; font-size: $rem-big; text-transform: uppercase; }
+  h3 { font-family: $font-base; font-size: $px-med; font-size: $rem-med; }
+  h2, h3 { line-height: 1em; font-weight: bold; }
+  
+  .projects {
+    h2 { border-bottom: 0; border-top: 8px solid $color-body; font-size: $px-huge; font-size: $rem-huge; }
+  }
 }
 
 aside {
   @include col(4);
   @include last;
+  font-size: $px-small;
+  font-size: $rem-small;
+  margin: $px-line-base auto;
+  
+  .silk { box-shadow: 0 0 8px #AAA; padding: 95px 0; width: 282px; }
+  .paper {
+    @include col(3);
+    @include last();
+    background: white;
+    float: none;
+    padding: 30px 15px;
+    
+    h2 { color: $color-link; font-family: $font-condensed; font-size: $px-med; font-size: $rem-med; text-transform: uppercase; }
+  }
+  .silk, .paper { margin: 0 auto; overflow: hidden; }
 }
 
 footer {
   @include row;
+  
+  background: $color-body;
+  color: $color-bg;
 }
