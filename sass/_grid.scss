@@ -19,19 +19,21 @@ $col_total_width: $col_width + $col_margin;
 }
 
 /* create a column div */
-@mixin col($n: 1) {
-	float: left;
-	@include span($n);
+@mixin col($n: 1,$f: left) {
+	float: $f;
+	@include span($n,$f);
 }
 
 /* make an element span n columns */
-@mixin span($n: 1) {
+@mixin span($n: 1,$f: left) {
 	width: ($n * $col_width) + (($n - 1) * $col_margin);
-	@if $n == $columns {
-		margin-right: 0;
-	}
-	@else {
-	  margin-right: $col_margin;
+	@if $f == left {
+	  @if $n == $columns {
+  		margin-right: 0;
+  	}
+  	@else {
+  	  margin-right: $col_margin;
+  	}
 	}
 }
 

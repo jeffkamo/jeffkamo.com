@@ -40,12 +40,31 @@ body {
 html {
   font-size: 62.5%;
 }
+img {
+  max-width: 100%;
+}
 strong {
   font-weight: bold;
 }
 
 /* Global Classes */
-.wrapper {
-  margin: 0 auto;
-  width: $width;
+@media (min-width: 978px) {
+  .wrapper {
+    margin: 0 auto;
+    width: $width;
+  }
+}
+@media (min-width: 642px) and (max-width: 977px) {
+  .wrapper {
+    @include col(8,none);
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+@media (max-width: 641px) {
+  .wrapper {
+    @include col(4,none);
+    margin: 0 auto;
+    overflow: hidden;
+  }
 }
