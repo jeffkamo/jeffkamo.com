@@ -1,0 +1,271 @@
+/* line 17, ../../../../.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/**
+ * Semantic CSS Grids with SASS
+ * As seen here -> http://bjorkoy.com/2010/05/css-grids-with-sass/
+ */
+/* total with of page */
+/* number of columns */
+/* margin between columns */
+/* math magic */
+/* create row div */
+/* create a column div */
+/* make an element span n columns */
+/* the last column in a row needs this */
+/* prepend n blank columns */
+/* append n blank columns */
+/* Global Variables */
+/* Global Elements */
+/* line 26, ../sass/_base.scss */
+a {
+  border-bottom: 1px solid #549bc7;
+  color: #549bc7;
+  text-decoration: none;
+}
+
+/* line 31, ../sass/_base.scss */
+body {
+  background: #efefef;
+  color: #707070;
+  font-family: myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 22px;
+  line-height: 2.2rem;
+}
+
+/* line 40, ../sass/_base.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 43, ../sass/_base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 46, ../sass/_base.scss */
+strong {
+  font-weight: bold;
+}
+
+/* Global Classes */
+@media (min-width: 978px) {
+  /* line 52, ../sass/_base.scss */
+  .wrapper {
+    margin: 0 auto;
+    width: 978px;
+  }
+}
+@media (min-width: 642px) and (max-width: 977px) {
+  /* line 58, ../sass/_base.scss */
+  .wrapper {
+    float: none;
+    width: 642px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+@media (max-width: 641px) {
+  /* line 65, ../sass/_base.scss */
+  .wrapper {
+    float: none;
+    width: 306px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+/* Media Queries */
+@media (min-width: 978px) {
+  /* line 5, ../sass/screen.scss */
+  section {
+    float: left;
+    width: 642px;
+    margin-right: 30px;
+  }
+  /* line 6, ../sass/screen.scss */
+  section figure {
+    float: left;
+    width: 306px;
+    margin-right: 30px;
+  }
+}
+@media (min-width: 642px) and (max-width: 977px) {
+  /* line 10, ../sass/screen.scss */
+  section {
+    float: left;
+    width: 306px;
+    margin-right: 30px;
+  }
+}
+@media (max-width: 641px) {
+  /* line 13, ../sass/screen.scss */
+  section {
+    float: left;
+    width: 222px;
+    margin-right: 30px;
+  }
+  /* line 14, ../sass/screen.scss */
+  section figure {
+    float: left;
+    width: 222px;
+    margin-right: 30px;
+  }
+}
+/* Standard Application Styles */
+/* line 19, ../sass/screen.scss */
+header {
+  float: left;
+  clear: both;
+  width: 978px;
+  background: #c7b696;
+  height: 350px;
+}
+
+/* line 21, ../sass/screen.scss */
+section {
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+/* line 22, ../sass/screen.scss */
+section figure:nth-child(2n+1) {
+  margin-right: 0;
+}
+/* line 23, ../sass/screen.scss */
+section h2 {
+  border-bottom: 2px solid #707070;
+  font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 28px;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+/* line 24, ../sass/screen.scss */
+section h3 {
+  font-family: myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+/* line 25, ../sass/screen.scss */
+section h2, section h3 {
+  line-height: 1em;
+  font-weight: bold;
+}
+/* line 28, ../sass/screen.scss */
+section .projects h2 {
+  border-bottom: 0;
+  border-top: 8px solid #707070;
+  font-size: 80px;
+  font-size: 8rem;
+}
+
+/* line 32, ../sass/screen.scss */
+aside {
+  float: left;
+  width: 306px;
+  margin-right: 30px;
+  margin-right: 0;
+  font-size: 10px;
+  font-size: 1rem;
+  margin: 22px auto;
+}
+/* line 33, ../sass/screen.scss */
+aside h2 {
+  color: #549bc7;
+  font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 24px;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+/* line 35, ../sass/screen.scss */
+aside .silk {
+  box-shadow: 0 0 8px #AAA;
+  padding: 95px 0;
+  width: 282px;
+}
+/* line 36, ../sass/screen.scss */
+aside .paper {
+  float: left;
+  width: 222px;
+  margin-right: 30px;
+  margin-right: 0;
+  background: white;
+  float: none;
+  padding: 30px 15px;
+}
+/* line 37, ../sass/screen.scss */
+aside .silk, aside .paper {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* line 40, ../sass/screen.scss */
+footer {
+  float: left;
+  clear: both;
+  width: 978px;
+  background: #707070;
+  color: #efefef;
+}

@@ -1,271 +1,79 @@
-/* line 17, ../../../../.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
+/*
+Syntax error: Undefined mixin 'container'.
+        on line 8 of /Users/jeffkamo/Dropbox/My Sites/jeffkamo.com/sass/application.scss, in `container'
+        from line 8 of /Users/jeffkamo/Dropbox/My Sites/jeffkamo.com/sass/application.scss
 
-/* line 20, ../../../../.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-body {
-  line-height: 1;
-}
-
-/* line 22, ../../../../.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 24, ../../../../.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 26, ../../../../.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 28, ../../../../.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 101, ../../../../.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 30, ../../../../.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 114, ../../../../.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
-/**
- * Semantic CSS Grids with SASS
- * As seen here -> http://bjorkoy.com/2010/05/css-grids-with-sass/
- */
-/* total with of page */
-/* number of columns */
-/* margin between columns */
-/* math magic */
-/* create row div */
-/* create a column div */
-/* make an element span n columns */
-/* the last column in a row needs this */
-/* prepend n blank columns */
-/* append n blank columns */
-/* Global Variables */
-/* Global Elements */
-/* line 26, ../sass/_base.scss */
-a {
-  border-bottom: 1px solid #549bc7;
-  color: #549bc7;
-  text-decoration: none;
-}
-
-/* line 31, ../sass/_base.scss */
-body {
-  background: #efefef;
-  color: #707070;
-  font-family: myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  font-size: 16px;
-  font-size: 1.6rem;
-  line-height: 22px;
-  line-height: 2.2rem;
-}
-
-/* line 40, ../sass/_base.scss */
-html {
-  font-size: 62.5%;
-}
-
-/* line 43, ../sass/_base.scss */
-img {
-  max-width: 100%;
-}
-
-/* line 46, ../sass/_base.scss */
-strong {
-  font-weight: bold;
-}
-
-/* Global Classes */
-@media (min-width: 978px) {
-  /* line 52, ../sass/_base.scss */
-  .wrapper {
-    margin: 0 auto;
-    width: 978px;
-  }
-}
-@media (min-width: 642px) and (max-width: 977px) {
-  /* line 58, ../sass/_base.scss */
-  .wrapper {
-    float: none;
-    width: 642px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-}
-@media (max-width: 641px) {
-  /* line 65, ../sass/_base.scss */
-  .wrapper {
-    float: none;
-    width: 306px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-}
-/* Media Queries */
-@media (min-width: 978px) {
-  /* line 5, ../sass/application.scss */
-  section {
-    float: left;
-    width: 642px;
-    margin-right: 30px;
-  }
-  /* line 6, ../sass/application.scss */
-  section figure {
-    float: left;
-    width: 306px;
-    margin-right: 30px;
-  }
-}
-@media (min-width: 642px) and (max-width: 977px) {
-  /* line 10, ../sass/application.scss */
-  section {
-    float: left;
-    width: 306px;
-    margin-right: 30px;
-  }
-}
-@media (max-width: 641px) {
-  /* line 13, ../sass/application.scss */
-  section {
-    float: left;
-    width: 222px;
-    margin-right: 30px;
-  }
-  /* line 14, ../sass/application.scss */
-  section figure {
-    float: left;
-    width: 222px;
-    margin-right: 30px;
-  }
-}
-/* Standard Application Styles */
-/* line 19, ../sass/application.scss */
-header {
-  float: left;
-  clear: both;
-  width: 978px;
-  background: #c7b696;
-  height: 350px;
-}
-
-/* line 21, ../sass/application.scss */
-section {
-  margin-top: 22px;
-  margin-bottom: 22px;
-}
-/* line 22, ../sass/application.scss */
-section figure:nth-child(2n+1) {
-  margin-right: 0;
-}
-/* line 23, ../sass/application.scss */
-section h2 {
-  border-bottom: 2px solid #707070;
-  font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  font-size: 28px;
-  font-size: 2.8rem;
-  text-transform: uppercase;
-}
-/* line 24, ../sass/application.scss */
-section h3 {
-  font-family: myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  font-size: 24px;
-  font-size: 2.4rem;
-}
-/* line 25, ../sass/application.scss */
-section h2, section h3 {
-  line-height: 1em;
-  font-weight: bold;
-}
-/* line 28, ../sass/application.scss */
-section .projects h2 {
-  border-bottom: 0;
-  border-top: 8px solid #707070;
-  font-size: 80px;
-  font-size: 8rem;
-}
-
-/* line 32, ../sass/application.scss */
-aside {
-  float: left;
-  width: 306px;
-  margin-right: 30px;
-  margin-right: 0;
-  font-size: 10px;
-  font-size: 1rem;
-  margin: 22px auto;
-}
-/* line 33, ../sass/application.scss */
-aside h2 {
-  color: #549bc7;
-  font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  font-size: 24px;
-  font-size: 2.4rem;
-  text-transform: uppercase;
-}
-/* line 35, ../sass/application.scss */
-aside .silk {
-  box-shadow: 0 0 8px #AAA;
-  padding: 95px 0;
-  width: 282px;
-}
-/* line 36, ../sass/application.scss */
-aside .paper {
-  float: left;
-  width: 222px;
-  margin-right: 30px;
-  margin-right: 0;
-  background: white;
-  float: none;
-  padding: 30px 15px;
-}
-/* line 37, ../sass/application.scss */
-aside .silk, aside .paper {
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-/* line 40, ../sass/application.scss */
-footer {
-  float: left;
-  clear: both;
-  width: 978px;
-  background: #707070;
-  color: #efefef;
-}
+Backtrace:
+/Users/jeffkamo/Dropbox/My Sites/jeffkamo.com/sass/application.scss:8:in `container'
+/Users/jeffkamo/Dropbox/My Sites/jeffkamo.com/sass/application.scss:8
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:168:in `visit_mixin'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:234:in `visit_rule'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/tree/root_node.rb:20:in `render'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/engine.rb:300:in `_render'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/engine.rb:248:in `block in render'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/util.rb:297:in `silence_sass_warnings'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/sass-3.1.11/lib/sass/engine.rb:248:in `render'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/lib/compass/compiler.rb:136:in `block (2 levels) in compile'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/lib/compass/compiler.rb:122:in `timed'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/lib/compass/compiler.rb:135:in `block in compile'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/lib/compass/logger.rb:45:in `red'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/lib/compass/compiler.rb:134:in `compile'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/lib/compass/compiler.rb:114:in `compile_if_required'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/lib/compass/compiler.rb:99:in `block (2 levels) in run'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/lib/compass/compiler.rb:97:in `each'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/lib/compass/compiler.rb:97:in `block in run'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/lib/compass/compiler.rb:122:in `timed'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/lib/compass/compiler.rb:96:in `run'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/lib/compass/commands/watch_project.rb:142:in `recompile'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `call'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `run_callback'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/fssm-0.2.7/lib/fssm/path.rb:55:in `callback_action'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/fssm-0.2.7/lib/fssm/path.rb:35:in `update'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/fssm-0.2.7/lib/fssm/state/directory.rb:39:in `block in modified'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `each'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `modified'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/fssm-0.2.7/lib/fssm/state/directory.rb:18:in `refresh'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `each'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `block in run'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:15:in `loop'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:15:in `run'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/fssm-0.2.7/lib/fssm/monitor.rb:26:in `run'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/fssm-0.2.7/lib/fssm.rb:20:in `monitor'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/lib/compass/commands/watch_project.rb:86:in `perform'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/lib/compass/commands/base.rb:18:in `execute'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/bin/compass:25:in `block in <top (required)>'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/bin/compass:39:in `call'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/bin/compass:39:in `<top (required)>'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/bin/compass:19:in `load'
+/Users/jeffkamo/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/bin/compass:19:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'container'.\A         on line 8 of /Users/jeffkamo/Dropbox/My Sites/jeffkamo.com/sass/application.scss, in `container'\A         from line 8 of /Users/jeffkamo/Dropbox/My Sites/jeffkamo.com/sass/application.scss"; }
