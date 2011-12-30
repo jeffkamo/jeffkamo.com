@@ -63,32 +63,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/**
- * Semantic CSS Grids with SASS
- * As seen here -> http://bjorkoy.com/2010/05/css-grids-with-sass/
- */
-/* total with of page */
-/* number of columns */
-/* margin between columns */
-/* math magic */
-/* create row div */
-/* create a column div */
-/* make an element span n columns */
-/* the last column in a row needs this */
-/* prepend n blank columns */
-/* append n blank columns */
-/* Global Variables */
-/* Global Elements */
-/* line 26, ../sass/_base.scss */
+/* line 53, ../sass/_base.scss */
 a {
   border-bottom: 1px solid #549bc7;
   color: #549bc7;
   text-decoration: none;
 }
 
-/* line 31, ../sass/_base.scss */
+/* line 58, ../sass/_base.scss */
 body {
-  background: #efefef;
+  background: #efefef url("../img/body_background.jpg");
   color: #707070;
   font-family: myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-size: 16px;
@@ -97,175 +81,69 @@ body {
   line-height: 2.2rem;
 }
 
-/* line 40, ../sass/_base.scss */
+/* line 67, ../sass/_base.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 43, ../sass/_base.scss */
+/* line 70, ../sass/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 46, ../sass/_base.scss */
+/* line 73, ../sass/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* Global Classes */
-@media (min-width: 978px) {
-  /* line 52, ../sass/_base.scss */
-  .wrapper {
-    margin: 0 auto;
-    width: 978px;
-  }
+/* line 79, ../sass/_base.scss */
+.wrapper {
+  *zoom: 1;
+  margin: auto;
+  width: 64.875em;
+  max-width: 100%;
 }
-@media (min-width: 642px) and (max-width: 977px) {
-  /* line 58, ../sass/_base.scss */
-  .wrapper {
-    float: none;
-    width: 642px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
+/* line 38, ../../../../.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-@media (max-width: 641px) {
-  /* line 65, ../sass/_base.scss */
-  .wrapper {
-    float: none;
-    width: 306px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-}
+
 /* Media Queries */
-@media (min-width: 978px) {
-  /* line 5, ../sass/screen.scss */
-  section {
-    float: left;
-    width: 642px;
-    margin-right: 30px;
-  }
-  /* line 6, ../sass/screen.scss */
-  section figure {
-    float: left;
-    width: 306px;
-    margin-right: 30px;
+/*@media (min-width: 978px) {
+  section { @include col(8);
+    figure { @include col(4); }
   }
 }
 @media (min-width: 642px) and (max-width: 977px) {
-  /* line 10, ../sass/screen.scss */
-  section {
-    float: left;
-    width: 306px;
-    margin-right: 30px;
-  }
+  section { @include col(4); }
 }
 @media (max-width: 641px) {
-  /* line 13, ../sass/screen.scss */
-  section {
-    float: left;
-    width: 222px;
-    margin-right: 30px;
+  section { @include col(3);
+    figure { @include col(3); }
   }
-  /* line 14, ../sass/screen.scss */
-  section figure {
-    float: left;
-    width: 222px;
-    margin-right: 30px;
-  }
-}
+}*/
 /* Standard Application Styles */
-/* line 19, ../sass/screen.scss */
-header {
-  float: left;
-  clear: both;
-  width: 978px;
-  background: #c7b696;
-  height: 350px;
+/*header { @include row; background: #c7b696; height: 350px; }
+
+section { margin-top: $px-line-base; margin-bottom: $px-line-base;
+  figure:nth-child(2n+1) { @include last; }
+  h2 { border-bottom: 2px solid $color-body; font-family: $font-condensed; font-size: $px-big; font-size: $rem-big; text-transform: uppercase; }
+  h3 { font-family: $font-base; font-size: $px-med; font-size: $rem-med; }
+  h2, h3 { line-height: 1em; font-weight: bold; }
+  
+  .projects {
+    h2 { border-bottom: 0; border-top: 8px solid $color-body; font-size: $px-huge; font-size: $rem-huge; }
+  }
 }
 
-/* line 21, ../sass/screen.scss */
-section {
-  margin-top: 22px;
-  margin-bottom: 22px;
-}
-/* line 22, ../sass/screen.scss */
-section figure:nth-child(2n+1) {
-  margin-right: 0;
-}
-/* line 23, ../sass/screen.scss */
-section h2 {
-  border-bottom: 2px solid #707070;
-  font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  font-size: 28px;
-  font-size: 2.8rem;
-  text-transform: uppercase;
-}
-/* line 24, ../sass/screen.scss */
-section h3 {
-  font-family: myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  font-size: 24px;
-  font-size: 2.4rem;
-}
-/* line 25, ../sass/screen.scss */
-section h2, section h3 {
-  line-height: 1em;
-  font-weight: bold;
-}
-/* line 28, ../sass/screen.scss */
-section .projects h2 {
-  border-bottom: 0;
-  border-top: 8px solid #707070;
-  font-size: 80px;
-  font-size: 8rem;
+aside { @include col(4); @include last; font-size: $px-small; font-size: $rem-small; margin: $px-line-base auto;
+  h2 { color: $color-link; font-family: $font-condensed; font-size: $px-med; font-size: $rem-med; text-transform: uppercase; }
+  
+  .silk { box-shadow: 0 0 8px #AAA; padding: 95px 0; width: 282px; }
+  .paper { @include col(3); @include last(); background: white; float: none; padding: 30px 15px; }
+  .silk, .paper { margin: 0 auto; overflow: hidden; }
 }
 
-/* line 32, ../sass/screen.scss */
-aside {
-  float: left;
-  width: 306px;
-  margin-right: 30px;
-  margin-right: 0;
-  font-size: 10px;
-  font-size: 1rem;
-  margin: 22px auto;
-}
-/* line 33, ../sass/screen.scss */
-aside h2 {
-  color: #549bc7;
-  font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  font-size: 24px;
-  font-size: 2.4rem;
-  text-transform: uppercase;
-}
-/* line 35, ../sass/screen.scss */
-aside .silk {
-  box-shadow: 0 0 8px #AAA;
-  padding: 95px 0;
-  width: 282px;
-}
-/* line 36, ../sass/screen.scss */
-aside .paper {
-  float: left;
-  width: 222px;
-  margin-right: 30px;
-  margin-right: 0;
-  background: white;
-  float: none;
-  padding: 30px 15px;
-}
-/* line 37, ../sass/screen.scss */
-aside .silk, aside .paper {
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-/* line 40, ../sass/screen.scss */
-footer {
-  float: left;
-  clear: both;
-  width: 978px;
-  background: #707070;
-  color: #efefef;
-}
+footer { @include row; background: $color-body; color: $color-bg; }*/

@@ -1,35 +1,62 @@
-@import "compass/reset";
-@import "grid";
+// Imports -------------------------------------------------------------------
 
-/* Global Variables */
-$color-bg:     #efefef;
-$color-body:   #707070;
-$color-link:   #549bc7;
+@import "compass/reset";
+@import "susy";
+
+// Functions -----------------------------------------------------------------
+
+@function calc-em($target-px, $context) {
+  @return ($target-px / $context) * 1em;
+}
+@function calc-per($target-px, $context) {
+  @return (($target-px) / ($context)) * 100%;
+}
+@function calc-rem($target-px, $context) {
+  @return ($target-px / $context) * 1rem;
+}
+
+// Global Variables ----------------------------------------------------------
+
+$color-bg    : #efefef;
+$color-body  : #707070;
+$color-link  : #549bc7;
 $color-strong: #c76a54;
+
+$column-px: 54px;
+$gutter-px: 30px;
 
 $font-base: myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 $font-condensed: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-$rem-huge: 8.0rem;
-$rem-big:  2.8rem;
-$rem-med:  2.4rem;
-$rem-norm: 1.6rem;
-$rem-small:1.0rem;
-$rem-line-base: 2.2rem;
-$px-huge: 80px;
-$px-big:  28px;
-$px-med:  24px;
-$px-norm: 16px;
-$px-small:10px;
+$px-huge : 80px;
+$px-big  : 28px;
+$px-med  : 24px;
+$px-norm : 16px;
+$px-small: 10px;
 $px-line-base: 22px;
+$rem-huge : calc-rem($px-huge,$px-small);  // 8.0rem;
+$rem-big  : calc-rem($px-big,$px-small);   // 2.8rem;
+$rem-med  : calc-rem($px-med,$px-small);   // 2.4rem;
+$rem-norm : calc-rem($px-norm,$px-small);  // 1.6rem;
+$rem-small: calc-rem($px-small,$px-small); // 1.0rem;
+$rem-line-base: calc-rem($px-line-base,$px-small); // 2.2rem;
 
-/* Global Elements */
+// Grid ----------------------------------------------------------------------
+
+$total-cols       : 12;
+$col-width        : calc-em($column-px,$px-norm);
+$gutter-width     : calc-em($gutter-px,$px-norm);
+$side-gutter-width: $gutter-width;
+$show-grid-backgrounds: false;
+
+// Global Elements -----------------------------------------------------------
+
 a {
   border-bottom: 1px solid $color-link;
   color: $color-link;
   text-decoration: none;
 }
 body {
-  background: $color-bg;
+  background: $color-bg url('../img/body_background.jpg');
   color: $color-body;
   font-family: $font-base;
   font-size: $px-norm;
@@ -38,7 +65,7 @@ body {
   line-height: $rem-line-base;
 }
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; // 10px;
 }
 img {
   max-width: 100%;
@@ -47,24 +74,9 @@ strong {
   font-weight: bold;
 }
 
-/* Global Classes */
-@media (min-width: 978px) {
-  .wrapper {
-    margin: 0 auto;
-    width: $width;
-  }
-}
-@media (min-width: 642px) and (max-width: 977px) {
-  .wrapper {
-    @include col(8,none);
-    margin: 0 auto;
-    overflow: hidden;
-  }
-}
-@media (max-width: 641px) {
-  .wrapper {
-    @include col(4,none);
-    margin: 0 auto;
-    overflow: hidden;
-  }
+// Global Classes ------------------------------------------------------------
+
+.wrapper {
+  @include container;
+  @include susy-grid-background;
 }

@@ -1,7 +1,7 @@
 @import "base";
 
 /* Media Queries */
-@media (min-width: 978px) {
+/*@media (min-width: 978px) {
   section { @include col(8);
     figure { @include col(4); }
   }
@@ -13,10 +13,10 @@
   section { @include col(3);
     figure { @include col(3); }
   }
-}
+}*/
 
 /* Standard Application Styles */
-header { @include row; background: #c7b696; height: 350px; }
+/*header { @include row; background: #c7b696; height: 350px; }
 
 section { margin-top: $px-line-base; margin-bottom: $px-line-base;
   figure:nth-child(2n+1) { @include last; }
@@ -37,4 +37,4 @@ aside { @include col(4); @include last; font-size: $px-small; font-size: $rem-sm
   .silk, .paper { margin: 0 auto; overflow: hidden; }
 }
 
-footer { @include row; background: $color-body; color: $color-bg; }
+footer { @include row; background: $color-body; color: $color-bg; }*/
