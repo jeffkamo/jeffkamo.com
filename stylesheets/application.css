@@ -63,14 +63,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 53, ../sass/_base.scss */
+/* line 70, ../sass/_base.scss */
 a {
   border-bottom: 1px solid #549bc7;
   color: #549bc7;
   text-decoration: none;
 }
 
-/* line 58, ../sass/_base.scss */
+/* line 75, ../sass/_base.scss */
 body {
   background: #efefef url("../img/body_background.jpg");
   color: #707070;
@@ -81,22 +81,22 @@ body {
   line-height: 2.2rem;
 }
 
-/* line 67, ../sass/_base.scss */
+/* line 84, ../sass/_base.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 70, ../sass/_base.scss */
+/* line 87, ../sass/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 73, ../sass/_base.scss */
+/* line 90, ../sass/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 79, ../sass/_base.scss */
+/* line 96, ../sass/_base.scss */
 .wrapper {
   *zoom: 1;
   margin: auto;
@@ -112,11 +112,21 @@ strong {
 
 /* line 8, ../sass/application.scss */
 header {
-  clear: both;
-  margin-left: 2.89%;
-  margin-right: 2.89%;
-  background: #c7b696;
-  height: 350px;
+  height: 384px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  width: 809px;
+  margin: 10px auto 0;
+  position: relative;
+  z-index: 10;
+}
+/* line 27, ../sass/_base.scss */
+header:before {
+  content: url("../img/sun_background.png");
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
 }
 
 /* line 10, ../sass/application.scss */
@@ -126,7 +136,6 @@ section {
   float: left;
   width: 61.85%;
   margin-right: 2.89%;
-  margin-top: 22px;
   margin-bottom: 22px;
 }
 /* line 11, ../sass/application.scss */
@@ -160,14 +169,26 @@ section .projects figure {
   margin-right: 4.673%;
 }
 /* line 17, ../sass/application.scss */
+section .projects figure:nth-child(2n+1) {
+  display: inline;
+  float: right;
+  margin-right: 0;
+  #margin-left: -1.875em;
+}
+/* line 19, ../sass/application.scss */
 section .projects figure figcaption {
-  -moz-transition: opacity 0.5s ease, margin-bottom 0.5s ease;
-  -webkit-transition: opacity 0.5s ease, margin-bottom 0.5s ease;
-  -o-transition: opacity 0.5s ease, margin-bottom 0.5s ease;
-  transition: opacity 0.5s ease, margin-bottom 0.5s ease;
+  -moz-transition: opacity 0.5s ease, margin-bottom 0.5s ease-out;
+  -webkit-transition: opacity 0.5s ease, margin-bottom 0.5s ease-out;
+  -o-transition: opacity 0.5s ease, margin-bottom 0.5s ease-out;
+  transition: opacity 0.5s ease, margin-bottom 0.5s ease-out;
   opacity: 0;
 }
-/* line 18, ../sass/application.scss */
+/* line 20, ../sass/application.scss */
+section .projects figure:hover figcaption {
+  margin-bottom: 2.2rem;
+  opacity: 1;
+}
+/* line 22, ../sass/application.scss */
 section .projects figure img {
   -moz-transition: opacity 0.5s ease;
   -webkit-transition: opacity 0.5s ease;
@@ -176,26 +197,14 @@ section .projects figure img {
   background: white;
   border: 1px solid #d0d0d0;
   max-width: 92.81%;
-  opacity: 0.5;
+  opacity: 0.6;
   padding: 3.268%;
 }
-/* line 20, ../sass/application.scss */
-section .projects figure:hover figcaption {
-  margin-bottom: 2.2rem;
-  opacity: 1;
-}
-/* line 21, ../sass/application.scss */
+/* line 23, ../sass/application.scss */
 section .projects figure:hover img {
   opacity: 1;
 }
-/* line 22, ../sass/application.scss */
-section .projects figure:nth-child(2n+1) {
-  display: inline;
-  float: right;
-  margin-right: 0;
-  #margin-left: -1.875em;
-}
-/* line 24, ../sass/application.scss */
+/* line 25, ../sass/application.scss */
 section .projects h2 {
   border-bottom: 0;
   border-top: 8px solid #707070;
@@ -203,7 +212,7 @@ section .projects h2 {
   font-size: 8rem;
 }
 
-/* line 28, ../sass/application.scss */
+/* line 29, ../sass/application.scss */
 aside {
   display: inline;
   float: left;
@@ -216,9 +225,10 @@ aside {
   font-size: 10px;
   font-size: 1rem;
   margin-bottom: 22px;
-  margin-top: 22px;
+  position: relative;
+  z-index: 20;
 }
-/* line 29, ../sass/application.scss */
+/* line 30, ../sass/application.scss */
 aside h2 {
   color: #549bc7;
   font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
@@ -226,13 +236,13 @@ aside h2 {
   font-size: 2.4rem;
   text-transform: uppercase;
 }
-/* line 31, ../sass/application.scss */
+/* line 32, ../sass/application.scss */
 aside .silk {
   background: url("../img/silk.jpg");
   box-shadow: 0 0 8px #AAA;
   padding: 9.5em 0;
 }
-/* line 32, ../sass/application.scss */
+/* line 33, ../sass/application.scss */
 aside .paper {
   display: inline;
   float: left;
@@ -241,7 +251,7 @@ aside .paper {
   background: white;
   padding: 3em 1.6em;
 }
-/* line 33, ../sass/application.scss */
+/* line 34, ../sass/application.scss */
 aside .silk, aside .paper {
   display: block;
   float: none;
@@ -249,7 +259,7 @@ aside .silk, aside .paper {
   overflow: hidden;
 }
 
-/* line 36, ../sass/application.scss */
+/* line 37, ../sass/application.scss */
 footer {
   clear: both;
   margin-left: 2.89%;

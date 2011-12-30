@@ -5,27 +5,28 @@
 
 // Layout --------------------------------------------------------------------
 
-header { @include full; background: #c7b696; height: 350px; }
+header { @include nir('../img/sun_background.png',384px,809px); margin: 10px auto 0; position: relative; z-index: 10; }
 
-section { @include alpha; @include columns(8); margin-top: $px-line-base; margin-bottom: $px-line-base;
+section { @include alpha; @include columns(8); margin-bottom: $px-line-base;
   h2 { border-bottom: 2px solid $color-body; font-family: $font-condensed; font-size: $px-big; font-size: $rem-big; text-transform: uppercase; }
   h3 { font-family: $font-base; font-size: $px-med; font-size: $rem-med; }
   h2, h3 { line-height: 1em; font-weight: bold; }
   
   .projects { overflow: hidden;
     figure { @include columns(4,8);
-      figcaption { @include transition(opacity 0.5s ease,margin-bottom 0.5s ease); opacity: 0; }
-      img { @include transition(opacity 0.5s ease); background: white; border: 1px solid #d0d0d0; max-width: calc-per(284px,306px); opacity: 0.5; padding: calc-per(10px,306px); }
-
-      &:hover figcaption { margin-bottom: $rem-line-base; opacity: 1; }
-      &:hover img { opacity: 1; }
       &:nth-child(2n+1) { @include omega(8); }
+      
+      figcaption { @include transition(opacity 0.5s ease,margin-bottom 0.5s ease-out); opacity: 0; }
+      &:hover figcaption { margin-bottom: $rem-line-base; opacity: 1; }
+      
+      img { @include transition(opacity 0.5s ease); background: white; border: 1px solid #d0d0d0; max-width: calc-per(284px,306px); opacity: 0.6; padding: calc-per(10px,306px); }
+      &:hover img { opacity: 1; }
     }
     h2 { border-bottom: 0; border-top: 8px solid $color-body; font-size: $px-huge; font-size: $rem-huge; }
   }
 }
 
-aside { @include columns(4); @include omega; font-size: $px-small; font-size: $rem-small; margin-bottom: $px-line-base; margin-top: $px-line-base;
+aside { @include columns(4); @include omega; font-size: $px-small; font-size: $rem-small; margin-bottom: $px-line-base; position: relative; z-index: 20;
   h2 { color: $color-link; font-family: $font-condensed; font-size: $px-med; font-size: $rem-med; text-transform: uppercase; }
   
   .silk { background: url('../img/silk.jpg'); box-shadow: 0 0 8px #AAA; padding: calc-em(95px,$px-small) 0; }

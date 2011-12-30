@@ -63,14 +63,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 53, ../sass/_base.scss */
+/* line 70, ../sass/_base.scss */
 a {
   border-bottom: 1px solid #549bc7;
   color: #549bc7;
   text-decoration: none;
 }
 
-/* line 58, ../sass/_base.scss */
+/* line 75, ../sass/_base.scss */
 body {
   background: #efefef url("../img/body_background.jpg");
   color: #707070;
@@ -81,22 +81,22 @@ body {
   line-height: 2.2rem;
 }
 
-/* line 67, ../sass/_base.scss */
+/* line 84, ../sass/_base.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 70, ../sass/_base.scss */
+/* line 87, ../sass/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 73, ../sass/_base.scss */
+/* line 90, ../sass/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 79, ../sass/_base.scss */
+/* line 96, ../sass/_base.scss */
 .wrapper {
   *zoom: 1;
   margin: auto;

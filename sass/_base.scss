@@ -15,6 +15,23 @@
   @return ($target-px / $context) * 1rem;
 }
 
+// Mixins --------------------------------------------------------------------
+
+@mixin nir($img,$height,$width) {
+  height: $height;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  width: $width;
+  
+  &:before {
+    content: url($img);
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+  }
+}
+
 // Global Variables ----------------------------------------------------------
 
 $color-bg    : #efefef;
