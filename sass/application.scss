@@ -5,31 +5,45 @@
 
 // Layout --------------------------------------------------------------------
 
-header { @include nir('../img/sun_background.png',384px,809px); margin: 10px auto 0; position: relative; z-index: 10; }
+header { @include nir('../img/sun_background.png',384px,809px); margin: 10px auto 0; position: relative; z-index: 10;
+  @media (max-width:870px) { @include nir('../img/sun_logo_med.jpg',229px,542px); margin: 10px auto 0; }
+  @media (max-width:540px) { @include nir('../img/sun_logo_small.jpg',263px,331px); margin: 10px auto 0; }
+}
 
 section { @include alpha; @include columns(8); margin-bottom: $px-line-base;
-  h2 { border-bottom: 2px solid $color-body; font-family: $font-bold-condensed; font-size: $px-big; font-size: $rem-big; text-transform: uppercase; }
+  @media (max-width:760px) { @include alpha; @include columns(12); @include omega; }
+  
+  h2 { border-bottom: 2px solid $color-body; font-family: $font-bold-condensed; font-size: $px-big; font-size: $rem-big; padding-top: $px-line-base; padding-top: $rem-line-base; text-transform: uppercase; }
   h3 { font-family: $font-bold-condensed; font-size: $px-med; font-size: $rem-med; }
   h2, h3 { line-height: 1em; font-weight: bold; }
   
-  .projects, .about, .skills, .learning { @include columns(8,8); overflow: hidden; }
-  .about, .skills, .learning { margin-bottom: $px-line-base; margin-bottom: $rem-line-base; }
+  .projects, .about, .skills, .learning { @include columns(8,8); }
+  .about, .skills, .learning { margin-bottom: $px-line-base; margin-bottom: $rem-line-base; overflow: hidden; }
   
   .projects {
-    figure { @include columns(4,8);
-      &:nth-child(2n+1) { @include omega(8); }
+    figure { @include columns(4,8); position: relative;
+      @media (max-width:760px) { @include columns(6,12); }
+      @media (max-width:499px) { @include columns(8,12); @include prefix(2); @include suffix(2); @include omega(8); }
       
-      figcaption { @include transition(opacity 0.5s ease,margin-bottom 0.5s ease-out); opacity: 0; }
-      &:hover figcaption { margin-bottom: $rem-line-base; opacity: 1; }
+      &:nth-child(2n+1) { @include omega(8);
+        @media (max-width:760px) { @include omega(6); }
+      }
       
-      img { @include transition(opacity 0.5s ease); background: white; border: 1px solid #d0d0d0; max-width: calc-per(284px,306px); opacity: 0.6; padding: calc-per(10px,306px); }
+      figcaption { @include transition(opacity 0.5s ease-in,bottom 0.5s ease); background: white; bottom: 0; border: 3px solid $color-body; border-radius: 5px; opacity: 0; padding: 1em 1em 0 1em; position: absolute; z-index: 30; }
+      &:hover figcaption { bottom: -85px; opacity: 1; }
+      
+      img { @include transition(opacity 0.5s ease); background: white; border: 1px solid #d0d0d0; max-width: calc-per(284px,306px); opacity: 0.6; padding: calc-per(10px,306px); position: relative; z-index: 20; }
       &:hover img { opacity: 1; }
     }
-    h2 { border-bottom: 0; border-top: 8px solid $color-body; font-size: $px-huge; font-size: $rem-huge; }
+    @media (min-width:500px) { 
+      h2 { border-bottom: 0; border-top: 8px solid $color-body; font-size: $px-huge; font-size: $rem-huge; }
+    }
   }
   
   .about {
-    div { @include columns(4,8); }
+    div { @include columns(4,8);
+      @media (max-width:499px) { @include columns(8,12); @include omega(12); @include prefix(2); @include suffix(2); }
+    }
     div:nth-child(2n+0) { @include omega(8); }
     img { float: left; margin-right: calc-per(10px, 306px); }
     
@@ -40,8 +54,12 @@ section { @include alpha; @include columns(8); margin-bottom: $px-line-base;
   }
   
   .skills {
-    p { @include columns(4,8); }
+    p { @include columns(4,8);
+      @media (max-width:499px) { @include columns(12,12); @include omega(12); }
+    }
     ul { @include columns(4,8); @include omega(8);
+      @media (max-width:499px) { @include columns(12,12); @include omega(12); }
+      
       li { @include columns (1,4); color: $color-strong; font-family: $font-bold-condensed; font-size: $px-med; font-size: $rem-med; text-align: center; }
       li:nth-child(4n+0) { @include omega(4); }
       img { margin-top: $px-semi; margin-top: $rem-semi; }
@@ -54,12 +72,18 @@ section { @include alpha; @include columns(8); margin-bottom: $px-line-base;
     span { color: $color-strong; font-family: $font-bold-condensed; font-size: $px-med; font-size: $rem-med; margin-bottom: $px-line-base/2; margin-bottom: $rem-line-base/2; }
     
     .disciplines { font-family: $font-condensed-ital; font-style: italic; font-size: $px-semi; font-size: $rem-semi; line-height: 30px; line-height: calc-rem(30px,10px); }
-    .disciplines > li:first-child { @include columns(5,8); }
-    .disciplines > li { @include columns(3,8); @include omega(8); margin-bottom: 15px; margin-bottom: 1.5rem; }
+    .disciplines > li:first-child { @include columns(5,8);
+      @media (max-width:499px) { @include columns(10,12); @include omega(12); @include prefix(1); @include suffix(1); }
+    }
+    .disciplines > li { @include columns(3,8); @include omega(8); margin-bottom: 15px; margin-bottom: 1.5rem;
+      @media (max-width:499px) { @include columns(10,12); @include omega(12); @include prefix(1); @include suffix(1); }
+    }
   }
 }
 
 aside { @include columns(4); @include omega; font-size: $px-small; font-size: $rem-small; line-height: 18px; line-height: 1.8rem; margin-bottom: $px-line-base; position: relative; z-index: 20;
+  @media (max-width:760px) { @include alpha; @include columns(8); @include omega; @include prefix(2); @include suffix(2); }
+  
   b { font-family: $font-bold-condensed; font-size: 12px; font-size: 1.2rem; }
   blockquote { font-size: 18px; font-size: 1.8rem; font-style: italic; text-align: center; }
   figcaption { display: none; }
@@ -81,4 +105,4 @@ section, aside {
   img:hover { opacity: 1; }
 }
 
-footer { @include full; background: $color-body; border-radius: 2px 2px 0 0; color: $color-bg; font-family: $font-condensed; letter-spacing: 0.2rem; opacity: 0.5; padding: calc-per(10px,978px); text-align: center; }
+footer { @include full; background: $color-body; border-radius: 2px 2px 0 0; color: $color-bg; font-family: $font-condensed; letter-spacing: 0.2rem; opacity: 0.4; padding: calc-per(10px,978px); text-align: center; }
