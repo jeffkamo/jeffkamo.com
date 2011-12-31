@@ -8,11 +8,14 @@
 header { @include nir('../img/sun_background.png',384px,809px); margin: 10px auto 0; position: relative; z-index: 10; }
 
 section { @include alpha; @include columns(8); margin-bottom: $px-line-base;
-  h2 { border-bottom: 2px solid $color-body; font-family: $font-condensed; font-size: $px-big; font-size: $rem-big; text-transform: uppercase; }
-  h3 { font-family: $font-base; font-size: $px-med; font-size: $rem-med; }
+  h2 { border-bottom: 2px solid $color-body; font-family: $font-bold-condensed; font-size: $px-big; font-size: $rem-big; text-transform: uppercase; }
+  h3 { font-family: $font-bold-condensed; font-size: $px-med; font-size: $rem-med; }
   h2, h3 { line-height: 1em; font-weight: bold; }
   
-  .projects { overflow: hidden;
+  .projects, .about, .skills, .learning { @include columns(8,8); overflow: hidden; }
+  .about, .skills, .learning { margin-bottom: $px-line-base; margin-bottom: $rem-line-base; }
+  
+  .projects {
     figure { @include columns(4,8);
       &:nth-child(2n+1) { @include omega(8); }
       
@@ -24,14 +27,58 @@ section { @include alpha; @include columns(8); margin-bottom: $px-line-base;
     }
     h2 { border-bottom: 0; border-top: 8px solid $color-body; font-size: $px-huge; font-size: $rem-huge; }
   }
+  
+  .about {
+    div { @include columns(4,8); }
+    div:nth-child(2n+0) { @include omega(8); }
+    img { float: left; margin-right: calc-per(10px, 306px); }
+    
+    .attributes { line-height: 30px; line-height: calc-rem(30px,10px);
+      h3 { color: $color-strong; }
+      ul li { font-family: $font-condensed-ital; font-style: italic; font-size: $px-semi; font-size: $rem-semi; }
+    }
+  }
+  
+  .skills {
+    p { @include columns(4,8); }
+    ul { @include columns(4,8); @include omega(8);
+      li { @include columns (1,4); color: $color-strong; font-family: $font-bold-condensed; font-size: $px-med; font-size: $rem-med; text-align: center; }
+      li:nth-child(4n+0) { @include omega(4); }
+      img { margin-top: $px-semi; margin-top: $rem-semi; }
+      span { display: block; }
+    }
+  }
+  
+  .learning {
+    img { float: left; margin-right: calc-per(10px, 306px); }
+    span { color: $color-strong; font-family: $font-bold-condensed; font-size: $px-med; font-size: $rem-med; margin-bottom: $px-line-base/2; margin-bottom: $rem-line-base/2; }
+    
+    .disciplines { font-family: $font-condensed-ital; font-style: italic; font-size: $px-semi; font-size: $rem-semi; line-height: 30px; line-height: calc-rem(30px,10px); }
+    .disciplines > li:first-child { @include columns(5,8); }
+    .disciplines > li { @include columns(3,8); @include omega(8); margin-bottom: 15px; margin-bottom: 1.5rem; }
+  }
 }
 
-aside { @include columns(4); @include omega; font-size: $px-small; font-size: $rem-small; margin-bottom: $px-line-base; position: relative; z-index: 20;
-  h2 { color: $color-link; font-family: $font-condensed; font-size: $px-med; font-size: $rem-med; text-transform: uppercase; }
+aside { @include columns(4); @include omega; font-size: $px-small; font-size: $rem-small; line-height: 18px; line-height: 1.8rem; margin-bottom: $px-line-base; position: relative; z-index: 20;
+  b { font-family: $font-bold-condensed; font-size: 12px; font-size: 1.2rem; }
+  blockquote { font-size: 18px; font-size: 1.8rem; font-style: italic; text-align: center; }
+  figcaption { display: none; }
+  h2 { color: $color-link; font-family: $font-condensed; font-size: $px-med; font-size: $rem-med; text-transform: uppercase;
+    &.nutshell { text-align: center; letter-spacing: 3px; letter-spacing: calc-rem(8px,10px); }
+    &.resources { text-align: center; letter-spacing: 10px; letter-spacing: calc-rem(8px,10px); margin-top: $px-line-base; margin-top: $rem-line-base; }
+  }
+  img { bottom: 50%; display: inline-block; top: 50%; }
+  table { width: 100%; }
+  td { text-align: center; padding: 0.5em; }
   
   .silk { background: url('../img/silk.jpg'); box-shadow: 0 0 8px #AAA; padding: calc-em(95px,$px-small) 0; }
-  .paper { @include columns(3,4); background: white; padding: calc-em($gutter-px,$px-small) calc-em($px-norm,$px-small); }
+  .paper { @include columns(3,4); background: white; border-image: url('../img/scroll_border.gif'); border-width: 6px 0; padding: calc-em($gutter-px,$px-small) calc-em($px-norm,$px-small); }
   .silk, .paper { display: block; float: none; margin: 0 auto; overflow: hidden; }
 }
 
-footer { @include full; background: $color-body; color: $color-bg; }
+section, aside {
+  img { @include transition(opacity 0.5s ease); opacity: 0.5; }
+  img:hover { opacity: 1; }
+}
+
+footer { @include full; background: $color-body; border-radius: 2px 2px 0 0; color: $color-bg; font-family: $font-condensed; letter-spacing: 0.2rem; opacity: 0.5; padding: calc-per(10px,978px); text-align: center; }

@@ -63,14 +63,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 70, ../sass/_base.scss */
+@font-face {
+  font-family: "Myriad Pro Condensed";
+  src: url("/Library/Fonts/MyriadPro-Cond.otf");
+}
+
+@font-face {
+  font-family: "Myriad Pro Condensed Italic";
+  src: url("/Library/Fonts/MyriadPro-CondIt.otf");
+}
+
+@font-face {
+  font-family: "Myriad Pro Bold Condensed";
+  src: url("/Library/Fonts/MyriadPro-BoldCond.otf");
+}
+
+/* line 87, ../sass/_base.scss */
 a {
   border-bottom: 1px solid #549bc7;
   color: #549bc7;
   text-decoration: none;
 }
 
-/* line 75, ../sass/_base.scss */
+/* line 92, ../sass/_base.scss */
+abbr {
+  border-bottom: 1px dotted #BBB;
+}
+
+/* line 95, ../sass/_base.scss */
+b {
+  font-weight: bold;
+}
+
+/* line 98, ../sass/_base.scss */
 body {
   background: #efefef url("../img/body_background.jpg");
   color: #707070;
@@ -81,22 +106,28 @@ body {
   line-height: 2.2rem;
 }
 
-/* line 84, ../sass/_base.scss */
+/* line 107, ../sass/_base.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 87, ../sass/_base.scss */
+/* line 110, ../sass/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 90, ../sass/_base.scss */
+/* line 113, ../sass/_base.scss */
+p, h1, h2, h3, h4, h5, h6, blockquote {
+  margin-bottom: 11px;
+  margin-bottom: 1.1rem;
+}
+
+/* line 117, ../sass/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 96, ../sass/_base.scss */
+/* line 123, ../sass/_base.scss */
 .wrapper {
   *zoom: 1;
   margin: auto;
@@ -121,7 +152,7 @@ header {
   position: relative;
   z-index: 10;
 }
-/* line 27, ../sass/_base.scss */
+/* line 40, ../sass/_base.scss */
 header:before {
   content: url("../img/sun_background.png");
   display: inline-block;
@@ -141,14 +172,14 @@ section {
 /* line 11, ../sass/application.scss */
 section h2 {
   border-bottom: 2px solid #707070;
-  font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-size: 28px;
   font-size: 2.8rem;
   text-transform: uppercase;
 }
 /* line 12, ../sass/application.scss */
 section h3 {
-  font-family: myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-size: 24px;
   font-size: 2.4rem;
 }
@@ -158,24 +189,33 @@ section h2, section h3 {
   font-weight: bold;
 }
 /* line 15, ../sass/application.scss */
-section .projects {
+section .projects, section .about, section .skills, section .learning {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin-right: 4.673%;
   overflow: hidden;
 }
 /* line 16, ../sass/application.scss */
+section .about, section .skills, section .learning {
+  margin-bottom: 22px;
+  margin-bottom: 2.2rem;
+}
+/* line 19, ../sass/application.scss */
 section .projects figure {
   display: inline;
   float: left;
   width: 47.664%;
   margin-right: 4.673%;
 }
-/* line 17, ../sass/application.scss */
+/* line 20, ../sass/application.scss */
 section .projects figure:nth-child(2n+1) {
   display: inline;
   float: right;
   margin-right: 0;
   #margin-left: -1.875em;
 }
-/* line 19, ../sass/application.scss */
+/* line 22, ../sass/application.scss */
 section .projects figure figcaption {
   -moz-transition: opacity 0.5s ease, margin-bottom 0.5s ease-out;
   -webkit-transition: opacity 0.5s ease, margin-bottom 0.5s ease-out;
@@ -183,12 +223,12 @@ section .projects figure figcaption {
   transition: opacity 0.5s ease, margin-bottom 0.5s ease-out;
   opacity: 0;
 }
-/* line 20, ../sass/application.scss */
+/* line 23, ../sass/application.scss */
 section .projects figure:hover figcaption {
   margin-bottom: 2.2rem;
   opacity: 1;
 }
-/* line 22, ../sass/application.scss */
+/* line 25, ../sass/application.scss */
 section .projects figure img {
   -moz-transition: opacity 0.5s ease;
   -webkit-transition: opacity 0.5s ease;
@@ -200,19 +240,143 @@ section .projects figure img {
   opacity: 0.6;
   padding: 3.268%;
 }
-/* line 23, ../sass/application.scss */
+/* line 26, ../sass/application.scss */
 section .projects figure:hover img {
   opacity: 1;
 }
-/* line 25, ../sass/application.scss */
+/* line 28, ../sass/application.scss */
 section .projects h2 {
   border-bottom: 0;
   border-top: 8px solid #707070;
   font-size: 80px;
   font-size: 8rem;
 }
+/* line 32, ../sass/application.scss */
+section .about div {
+  display: inline;
+  float: left;
+  width: 47.664%;
+  margin-right: 4.673%;
+}
+/* line 33, ../sass/application.scss */
+section .about div:nth-child(2n+0) {
+  display: inline;
+  float: right;
+  margin-right: 0;
+  #margin-left: -1.875em;
+}
+/* line 34, ../sass/application.scss */
+section .about img {
+  float: left;
+  margin-right: 3.268%;
+}
+/* line 36, ../sass/application.scss */
+section .about .attributes {
+  line-height: 30px;
+  line-height: 3rem;
+}
+/* line 37, ../sass/application.scss */
+section .about .attributes h3 {
+  color: #c76a54;
+}
+/* line 38, ../sass/application.scss */
+section .about .attributes ul li {
+  font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed Italic", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  font-size: 2rem;
+}
+/* line 43, ../sass/application.scss */
+section .skills p {
+  display: inline;
+  float: left;
+  width: 47.664%;
+  margin-right: 4.673%;
+}
+/* line 44, ../sass/application.scss */
+section .skills ul {
+  display: inline;
+  float: left;
+  width: 47.664%;
+  margin-right: 4.673%;
+  display: inline;
+  float: right;
+  margin-right: 0;
+  #margin-left: -1.875em;
+}
+/* line 45, ../sass/application.scss */
+section .skills ul li {
+  display: inline;
+  float: left;
+  width: 17.647%;
+  margin-right: 9.804%;
+  color: #c76a54;
+  font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 24px;
+  font-size: 2.4rem;
+  text-align: center;
+}
+/* line 46, ../sass/application.scss */
+section .skills ul li:nth-child(4n+0) {
+  display: inline;
+  float: right;
+  margin-right: 0;
+  #margin-left: -1.875em;
+}
+/* line 47, ../sass/application.scss */
+section .skills ul img {
+  margin-top: 20px;
+  margin-top: 2rem;
+}
+/* line 48, ../sass/application.scss */
+section .skills ul span {
+  display: block;
+}
+/* line 53, ../sass/application.scss */
+section .learning img {
+  float: left;
+  margin-right: 3.268%;
+}
+/* line 54, ../sass/application.scss */
+section .learning span {
+  color: #c76a54;
+  font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 24px;
+  font-size: 2.4rem;
+  margin-bottom: 11px;
+  margin-bottom: 1.1rem;
+}
+/* line 56, ../sass/application.scss */
+section .learning .disciplines {
+  font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed Italic", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 30px;
+  line-height: 3rem;
+}
+/* line 57, ../sass/application.scss */
+section .learning .disciplines > li:first-child {
+  display: inline;
+  float: left;
+  width: 60.748%;
+  margin-right: 4.673%;
+}
+/* line 58, ../sass/application.scss */
+section .learning .disciplines > li {
+  display: inline;
+  float: left;
+  width: 34.579%;
+  margin-right: 4.673%;
+  display: inline;
+  float: right;
+  margin-right: 0;
+  #margin-left: -1.875em;
+  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
+}
 
-/* line 29, ../sass/application.scss */
+/* line 62, ../sass/application.scss */
 aside {
   display: inline;
   float: left;
@@ -224,34 +388,84 @@ aside {
   #margin-left: -1.875em;
   font-size: 10px;
   font-size: 1rem;
+  line-height: 18px;
+  line-height: 1.8rem;
   margin-bottom: 22px;
   position: relative;
   z-index: 20;
 }
-/* line 30, ../sass/application.scss */
+/* line 63, ../sass/application.scss */
+aside b {
+  font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+/* line 64, ../sass/application.scss */
+aside blockquote {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-style: italic;
+  text-align: center;
+}
+/* line 65, ../sass/application.scss */
+aside figcaption {
+  display: none;
+}
+/* line 66, ../sass/application.scss */
 aside h2 {
   color: #549bc7;
-  font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-size: 24px;
   font-size: 2.4rem;
   text-transform: uppercase;
 }
-/* line 32, ../sass/application.scss */
+/* line 67, ../sass/application.scss */
+aside h2.nutshell {
+  text-align: center;
+  letter-spacing: 3px;
+  letter-spacing: 0.8rem;
+}
+/* line 68, ../sass/application.scss */
+aside h2.resources {
+  text-align: center;
+  letter-spacing: 10px;
+  letter-spacing: 0.8rem;
+  margin-top: 22px;
+  margin-top: 2.2rem;
+}
+/* line 70, ../sass/application.scss */
+aside img {
+  bottom: 50%;
+  display: inline-block;
+  top: 50%;
+}
+/* line 71, ../sass/application.scss */
+aside table {
+  width: 100%;
+}
+/* line 72, ../sass/application.scss */
+aside td {
+  text-align: center;
+  padding: 0.5em;
+}
+/* line 74, ../sass/application.scss */
 aside .silk {
   background: url("../img/silk.jpg");
   box-shadow: 0 0 8px #AAA;
   padding: 9.5em 0;
 }
-/* line 33, ../sass/application.scss */
+/* line 75, ../sass/application.scss */
 aside .paper {
   display: inline;
   float: left;
   width: 72.549%;
   margin-right: 9.804%;
   background: white;
+  border-image: url("../img/scroll_border.gif");
+  border-width: 6px 0;
   padding: 3em 1.6em;
 }
-/* line 34, ../sass/application.scss */
+/* line 76, ../sass/application.scss */
 aside .silk, aside .paper {
   display: block;
   float: none;
@@ -259,11 +473,30 @@ aside .silk, aside .paper {
   overflow: hidden;
 }
 
-/* line 37, ../sass/application.scss */
+/* line 80, ../sass/application.scss */
+section img, aside img {
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  opacity: 0.5;
+}
+/* line 81, ../sass/application.scss */
+section img:hover, aside img:hover {
+  opacity: 1;
+}
+
+/* line 84, ../sass/application.scss */
 footer {
   clear: both;
   margin-left: 2.89%;
   margin-right: 2.89%;
   background: #707070;
+  border-radius: 2px 2px 0 0;
   color: #efefef;
+  font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  letter-spacing: 0.2rem;
+  opacity: 0.5;
+  padding: 1.022%;
+  text-align: center;
 }

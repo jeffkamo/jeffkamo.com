@@ -63,14 +63,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 70, ../sass/_base.scss */
+@font-face {
+  font-family: "Myriad Pro Condensed";
+  src: url("/Library/Fonts/MyriadPro-Cond.otf");
+}
+
+@font-face {
+  font-family: "Myriad Pro Condensed Italic";
+  src: url("/Library/Fonts/MyriadPro-CondIt.otf");
+}
+
+@font-face {
+  font-family: "Myriad Pro Bold Condensed";
+  src: url("/Library/Fonts/MyriadPro-BoldCond.otf");
+}
+
+/* line 87, ../sass/_base.scss */
 a {
   border-bottom: 1px solid #549bc7;
   color: #549bc7;
   text-decoration: none;
 }
 
-/* line 75, ../sass/_base.scss */
+/* line 92, ../sass/_base.scss */
+abbr {
+  border-bottom: 1px dotted #BBB;
+}
+
+/* line 95, ../sass/_base.scss */
+b {
+  font-weight: bold;
+}
+
+/* line 98, ../sass/_base.scss */
 body {
   background: #efefef url("../img/body_background.jpg");
   color: #707070;
@@ -81,22 +106,28 @@ body {
   line-height: 2.2rem;
 }
 
-/* line 84, ../sass/_base.scss */
+/* line 107, ../sass/_base.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 87, ../sass/_base.scss */
+/* line 110, ../sass/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 90, ../sass/_base.scss */
+/* line 113, ../sass/_base.scss */
+p, h1, h2, h3, h4, h5, h6, blockquote {
+  margin-bottom: 11px;
+  margin-bottom: 1.1rem;
+}
+
+/* line 117, ../sass/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 96, ../sass/_base.scss */
+/* line 123, ../sass/_base.scss */
 .wrapper {
   *zoom: 1;
   margin: auto;
