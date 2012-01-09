@@ -7,7 +7,7 @@
 
 header { @include nir('../img/sun_background.png',384px,809px); margin: 10px auto 0; position: relative; z-index: 10;
   @media (max-width:870px) { @include nir('../img/sun_logo_med.jpg',229px,542px); margin: 10px auto 0; }
-  @media (max-width:540px) { @include nir('../img/sun_logo_small.jpg',263px,331px); margin: 10px auto 0; }
+  @media (max-width:540px) { @include nir('../img/sun_logo_small.jpg',263px,331px); margin: 10px auto 0; max-width: 100%; }
 }
 
 section { @include alpha; @include columns(8); margin-bottom: $px-line-base;
