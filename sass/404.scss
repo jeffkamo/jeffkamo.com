@@ -1,0 +1,27 @@
+// Imports -------------------------------------------------------------------
+
+@import "compass/css3/transition";
+@import "base";
+
+// Layout --------------------------------------------------------------------
+
+h1 {
+  @include full;
+  
+  border-bottom: 3px solid $color-strong;
+  color: $color-strong;
+  font-family: $font-condensed;
+  font-size: $px-huge;
+  font-size: $rem-huge;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+p {
+  @include full;
+  
+  font-color: $color-body;
+  font-size: $px-big;
+  font-size: $rem-big;
+  line-height: 1.5em;
+}

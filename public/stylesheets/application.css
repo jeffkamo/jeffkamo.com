@@ -17,6 +17,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 a { border-bottom: 1px solid #549bc7; color: #549bc7; text-decoration: none; }
 
+a:hover { border: none; }
+
 abbr { border-bottom: 1px dotted #BBB; }
 
 b { font-weight: bold; }
