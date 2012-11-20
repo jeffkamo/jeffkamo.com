@@ -4,4 +4,4 @@ require 'bundler'
 Bundler.require
 
 require './jeffkamo'
-run jeffkamo
+run Sinatra::Application
