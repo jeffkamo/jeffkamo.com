@@ -1,14 +1,15 @@
 .rising-sun {
-  margin: 10px auto 0;
+  @include nir('../img/sun_background.png', 384px, 809px);
+  
+  margin: 10px auto 1em;
   position: relative;
   z-index: 10;
   
   @media (max-width:870px) {
-    margin: 10px auto 0;
+    // styles...
   }
   
   @media (max-width:540px) {
-    margin: 10px auto 0;
     max-width: 100%;
   }
 }

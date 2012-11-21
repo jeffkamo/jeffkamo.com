@@ -1,11 +1,28 @@
 .headers {
-  line-height: 1em;
+  font-family: $font-bold-condensed;
   font-weight: bold;
+  line-height: 1em;
 }
 
-.headers__level-1 {
+.headers--level-1 {
+  @extend .headers;
+  
+  padding-top: $px-line-base;
+  padding-top: $rem-line-base;
+  text-transform: uppercase;
+  
+  @media (min-width:500px) { 
+    border-bottom: 0;
+    border-top: 8px solid $color-body;
+    font-size: $px-huge;
+    font-size: $rem-huge;
+  }
+}
+
+.headers--level-2 {
+  @extend .headers;
+  
   border-bottom: 2px solid $color-body;
-  font-family: $font-bold-condensed;
   font-size: $px-big;
   font-size: $rem-big;
   padding-top: $px-line-base;
@@ -13,8 +30,22 @@
   text-transform: uppercase;
 }
 
-.headers__level-2 {
-  font-family: $font-bold-condensed;
+.headers--level-3 {
+  @extend .headers;
+  
+  color: $color-strong;
   font-size: $px-med;
   font-size: $rem-med;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.headers__aside {
+  color: $color-link;
+  font-family: $font-condensed;
+  font-size: $px-med;
+  font-size: $rem-med;
+  letter-spacing: calc-rem(8px,10px);
+  text-align: center;
+  text-transform: uppercase;
 }

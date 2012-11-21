@@ -1,6 +1,4 @@
 .rising-sun {
-  @include nir('../img/sun_background.png', 384px, 809px);
-    
   @media (max-width:870px) {
     @include nir('../img/sun_logo_med.jpg', 229px, 542px);
   }

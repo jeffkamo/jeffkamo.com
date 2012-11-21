@@ -21,14 +21,6 @@
     display: none;
   }
   
-  h2 {
-    color: $color-link;
-    font-family: $font-condensed;
-    font-size: $px-med;
-    font-size: $rem-med;
-    text-transform: uppercase;
-  }
-  
   img {
     bottom: 50%;
     display: inline-block;
@@ -41,17 +33,5 @@
   
   td {
     text-align: center;
-  }
-  
-  .nutshell {
-    text-align: center;
-    letter-spacing: 3px;
-    letter-spacing: calc-rem(8px,10px);
-  }
-  
-  .resources {
-    text-align: center;
-    letter-spacing: 10px;
-    letter-spacing: calc-rem(8px,10px);
   }
 }

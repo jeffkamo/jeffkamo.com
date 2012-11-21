@@ -75,9 +75,9 @@ strong { font-weight: bold; }
 .projects__project:hover > figcaption { bottom: -85px; }
 .projects__project > img { max-width: 92.81046%; padding: 3.26797%; position: relative; z-index: 20; }
 
-.rising-sun { margin: 10px auto 0; position: relative; z-index: 10; }
-@media (max-width: 870px) { .rising-sun { margin: 10px auto 0; } }
-@media (max-width: 540px) { .rising-sun { margin: 10px auto 0; max-width: 100%; } }
+.rising-sun { height: 384px; margin: 0; overflow: hidden; padding: 0; width: 809px; margin: 10px auto 1em; position: relative; z-index: 10; }
+.rising-sun:before { content: url("../img/sun_background.png"); display: inline-block; font-size: 0; line-height: 0; }
+@media (max-width: 540px) { .rising-sun { max-width: 100%; } }
 
 .silk { float: none; margin: 0 auto; padding: 9.5em 0; }
 
@@ -91,32 +91,33 @@ strong { font-weight: bold; }
 .skills ul img { margin-top: 20px; margin-top: 2rem; }
 
 .attributes { line-height: 30px; line-height: 3rem; }
-.attributes h3 { color: #c76a54; }
-.attributes ul li { font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed Italic", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-style: italic; font-size: 20px; font-size: 2rem; }
+
+.attributes__attribute { font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed Italic", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-style: italic; font-size: 20px; font-size: 2rem; }
 
 .bio { font-size: 10px; font-size: 1rem; line-height: 18px; line-height: 1.8rem; }
 .bio b { font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 12px; font-size: 1.2rem; }
 .bio blockquote { font-size: 18px; font-size: 1.8rem; font-style: italic; text-align: center; }
 .bio figcaption { display: none; }
-.bio h2 { color: #549bc7; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 24px; font-size: 2.4rem; text-transform: uppercase; }
 .bio img { bottom: 50%; display: inline-block; top: 50%; }
 .bio table { width: 100%; }
 .bio td { text-align: center; }
-.bio .nutshell { text-align: center; letter-spacing: 3px; letter-spacing: 0.8rem; }
-.bio .resources { text-align: center; letter-spacing: 10px; letter-spacing: 0.8rem; }
 
-.disciplines { font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed Italic", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-style: italic; font-size: 20px; font-size: 2rem; line-height: 30px; line-height: 3rem; }
+.disciplines { line-height: 30px; line-height: 3rem; }
 
 .footer { background: #707070; border-radius: 2px 2px 0 0; color: #efefef; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; letter-spacing: 0.2rem; opacity: 0.4; text-align: center; }
 
-.headers { line-height: 1em; font-weight: bold; }
+.headers, .headers--level-1, .headers--level-2, .headers--level-3 { font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-weight: bold; line-height: 1em; }
 
-.headers__level-1 { border-bottom: 2px solid #707070; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 28px; font-size: 2.8rem; padding-top: 22px; padding-top: 2.2rem; text-transform: uppercase; }
+.headers--level-1 { padding-top: 22px; padding-top: 2.2rem; text-transform: uppercase; }
+@media (min-width: 500px) { .headers--level-1 { border-bottom: 0; border-top: 8px solid #707070; font-size: 80px; font-size: 8rem; } }
 
-.headers__level-2 { font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 24px; font-size: 2.4rem; }
+.headers--level-2 { border-bottom: 2px solid #707070; font-size: 28px; font-size: 2.8rem; padding-top: 22px; padding-top: 2.2rem; text-transform: uppercase; }
+
+.headers--level-3 { color: #c76a54; font-size: 24px; font-size: 2.4rem; font-style: normal; font-weight: normal; }
+
+.headers__aside { color: #549bc7; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 24px; font-size: 2.4rem; letter-spacing: 0.8rem; text-align: center; text-transform: uppercase; }
 
 .learning { overflow: hidden; }
-.learning span { color: #c76a54; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 24px; font-size: 2.4rem; }
 
 .opaque-graphic { -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; -o-transition: opacity 0.5s ease; transition: opacity 0.5s ease; opacity: 0.5; }
 
@@ -129,8 +130,6 @@ strong { font-weight: bold; }
 .projects__project img { -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; -o-transition: opacity 0.5s ease; transition: opacity 0.5s ease; background: white; border: 1px solid #d0d0d0; opacity: 0.6; }
 .projects__project:hover img { opacity: 1; }
 
-.rising-sun { height: 384px; margin: 0; overflow: hidden; padding: 0; width: 809px; }
-.rising-sun:before { content: url("../img/sun_background.png"); display: inline-block; font-size: 0; line-height: 0; }
 @media (max-width: 870px) { .rising-sun { height: 229px; margin: 0; overflow: hidden; padding: 0; width: 542px; }
   .rising-sun:before { content: url("../img/sun_logo_med.jpg"); display: inline-block; font-size: 0; line-height: 0; } }
 @media (max-width: 540px) { .rising-sun { height: 263px; margin: 0; overflow: hidden; padding: 0; width: 331px; }
@@ -138,5 +137,5 @@ strong { font-weight: bold; }
 
 .silk { background: url("../img/silk.jpg"); box-shadow: 0 0 8px #AAA; display: block; overflow: hidden; }
 
-.skills ul li { color: #c76a54; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 24px; font-size: 2.4rem; text-align: center; }
-.skills ul span { display: block; }
+.skills__skill { text-align: center; }
+.skills__skill > span { display: block; }
