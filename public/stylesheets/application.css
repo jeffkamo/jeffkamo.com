@@ -137,20 +137,23 @@ strong { font-weight: bold; }
 
 /* line 1, ../../sass/layouts/_skills.scss */
 .skills { width: 100%; float: left; margin-right: 4.6729%; display: inline; margin-bottom: 22px; margin-bottom: 2.2rem; overflow: hidden; }
-/* line 8, ../../sass/layouts/_skills.scss */
-.skills p { width: 47.66355%; float: left; margin-right: 4.6729%; display: inline; }
-@media (max-width: 499px) { /* line 8, ../../sass/layouts/_skills.scss */
-  .skills p { width: 100%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
-/* line 15, ../../sass/layouts/_skills.scss */
-.skills ul { width: 47.66355%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; }
-@media (max-width: 499px) { /* line 15, ../../sass/layouts/_skills.scss */
-  .skills ul { width: 100%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
-/* line 21, ../../sass/layouts/_skills.scss */
-.skills ul li { width: 17.64706%; float: left; margin-right: 9.80392%; display: inline; }
+
+/* line 9, ../../sass/layouts/_skills.scss */
+.skills__overview { width: 47.66355%; float: left; margin-right: 4.6729%; display: inline; }
+@media (max-width: 499px) { /* line 9, ../../sass/layouts/_skills.scss */
+  .skills__overview { width: 100%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
+
+/* line 16, ../../sass/layouts/_skills.scss */
+.skills__container { width: 47.66355%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; }
+@media (max-width: 499px) { /* line 16, ../../sass/layouts/_skills.scss */
+  .skills__container { width: 100%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
+
+/* line 23, ../../sass/layouts/_skills.scss */
+.skills__skill { width: 17.64706%; float: left; margin-right: 9.80392%; display: inline; }
 /* line 174, ../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.4/sass/susy/_grid.scss */
-.skills ul li:nth-child(4n) { float: right; margin-right: 0; }
-/* line 26, ../../sass/layouts/_skills.scss */
-.skills ul img { margin-top: 20px; margin-top: 2rem; }
+.skills__skill:nth-child(4n) { float: right; margin-right: 0; }
+/* line 27, ../../sass/layouts/_skills.scss */
+.skills__skill > img { margin-top: 20px; margin-top: 2rem; }
 
 /* line 1, ../../sass/modules/_about.scss */
 .about { overflow: hidden; }

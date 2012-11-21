@@ -4,28 +4,28 @@
   margin-bottom: $px-line-base;
   margin-bottom: $rem-line-base;
   overflow: hidden;
-  
-  p {
-    @include span-columns(4, 8);
-    @media (max-width: 499px) {
-      @include span-columns(12 omega, 12);
-    }
+}
+
+.skills__overview {
+  @include span-columns(4, 8);
+  @media (max-width: 499px) {
+    @include span-columns(12 omega, 12);
   }
+}
+
+.skills__container {
+  @include span-columns(4 omega, 8);
+  @media (max-width: 499px) {
+    @include span-columns(12 omega, 12);
+  }
+}
+
+.skills__skill {
+  @include span-columns(1, 4);
+  @include nth-omega(4n+0);
   
-  ul {
-    @include span-columns(4 omega, 8);
-    @media (max-width: 499px) {
-      @include span-columns(12 omega, 12);
-    }
-    
-    li {
-      @include span-columns(1, 4);
-      @include nth-omega(4n+0);
-    }
-    
-    img {
-      margin-top: $px-semi;
-      margin-top: $rem-semi;
-    }
+  & > img {
+    margin-top: $px-semi;
+    margin-top: $rem-semi;
   }
 }
