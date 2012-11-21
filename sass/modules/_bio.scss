@@ -11,10 +11,7 @@
   }
   
   blockquote {
-    font-size: 18px;
-    font-size: 1.8rem;
-    font-style: italic;
-    text-align: center;
+    
   }
   
   figcaption {
@@ -34,4 +31,11 @@
   td {
     text-align: center;
   }
+}
+
+.bio--quote {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-style: italic;
+  text-align: center;
 }

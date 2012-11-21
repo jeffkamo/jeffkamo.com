@@ -1,4 +1,4 @@
-.disciplines__discipline {
+.disciplines--discipline {
   @include span-columns(3 omega, 8);
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
@@ -10,7 +10,7 @@
   }
 }
 
-.disciplines__discipline:first-child {
+.disciplines--discipline:first-child {
   @include span-columns(5, 8);
   
   @media (max-width: 499px) {

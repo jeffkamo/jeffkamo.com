@@ -1,3 +1,25 @@
+/** == A NOTE ON CLASS NAMING CONVENTIONS
+ *  
+ *  Module names can be one word, or multiple words connected by underscores
+ *  
+ *    .module
+ *    .module_name_goes_here
+ *  
+ *  
+ *  Classes that inherit from others (via SASS) are denoted by a single hyphen
+ *  
+ *    .module-inherits
+ *    .from_this_module-this_class_inherits
+ *  
+ *  
+ *  Sub-modules are denoted by double hyphens
+ *  
+ *    .module--submodule
+ *    .core_module--the_sub_module
+ *  
+ **/
+
+
 // Core ---------------------------------------------------------------------
 
   // Compass Extensions -----------------------------------------------------

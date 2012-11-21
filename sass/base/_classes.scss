@@ -1,6 +1,6 @@
 // Base Elements -----------------------------------------------------------
 
-.opaque-graphic { // Generally used for images
+.opaque_graphic { // Generally used for images
   @include transition(opacity 0.5s ease);
   opacity: 0.5;
   

@@ -6,21 +6,21 @@
   overflow: hidden;
 }
 
-.skills__overview {
+.skills--overview {
   @include span-columns(4, 8);
   @media (max-width: 499px) {
     @include span-columns(12 omega, 12);
   }
 }
 
-.skills__container {
+.skills--container {
   @include span-columns(4 omega, 8);
   @media (max-width: 499px) {
     @include span-columns(12 omega, 12);
   }
 }
 
-.skills__skill {
+.skills--skill {
   @include span-columns(1, 4);
   @include nth-omega(4n+0);
   

@@ -9,7 +9,7 @@
   }
 }
 
-.projects__project {
+.projects--project {
   figcaption {
     @include transition(opacity 0.5s ease-in, bottom 0.5s ease);
     background: white;

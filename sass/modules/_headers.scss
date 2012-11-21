@@ -4,7 +4,7 @@
   line-height: 1em;
 }
 
-.headers--level-1 {
+.headers-level_1 {
   @extend .headers;
   
   padding-top: $px-line-base;
@@ -19,7 +19,7 @@
   }
 }
 
-.headers--level-2 {
+.headers-level_2 {
   @extend .headers;
   
   border-bottom: 2px solid $color-body;
@@ -30,7 +30,7 @@
   text-transform: uppercase;
 }
 
-.headers--level-3 {
+.headers-level_3 {
   @extend .headers;
   
   color: $color-strong;
@@ -40,7 +40,7 @@
   font-weight: normal;
 }
 
-.headers__aside {
+.headers--aside {
   color: $color-link;
   font-family: $font-condensed;
   font-size: $px-med;
