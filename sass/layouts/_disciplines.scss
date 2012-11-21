@@ -1,20 +1,20 @@
 .disciplines__discipline {
-  @include span-columns(3 omega,8);
+  @include span-columns(3 omega, 8);
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
   
-  @media (max-width:499px) {
-    @include span-columns(10 omega,12);
+  @media (max-width: 499px) {
+    @include span-columns(10 omega, 12);
     @include prefix(1);
     @include suffix(1);
   }
 }
 
 .disciplines__discipline:first-child {
-  @include span-columns(5,8);
+  @include span-columns(5, 8);
   
-  @media (max-width:499px) {
-    @include span-columns(10 omega,12);
+  @media (max-width: 499px) {
+    @include span-columns(10 omega, 12);
     @include prefix(1);
     @include suffix(1);
   }
