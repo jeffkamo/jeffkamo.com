@@ -6,9 +6,8 @@
 // Layout --------------------------------------------------------------------
 
 h1 {
-  @include full;
-  
   border-bottom: 3px solid $color-strong;
+  clear: both;
   color: $color-strong;
   font-family: $font-condensed;
   font-size: $px-huge;
@@ -18,8 +17,7 @@ h1 {
 }
 
 p {
-  @include full;
-  
+  clear: both;
   font-color: $color-body;
   font-size: $px-big;
   font-size: $rem-big;

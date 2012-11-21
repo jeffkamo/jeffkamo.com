@@ -1,0 +1,57 @@
+.bio {
+  font-size: $px-small;
+  font-size: $rem-small;
+  line-height: 18px;
+  line-height: 1.8rem;
+  
+  b {
+    font-family: $font-bold-condensed;
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+  
+  blockquote {
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  figcaption {
+    display: none;
+  }
+  
+  h2 {
+    color: $color-link;
+    font-family: $font-condensed;
+    font-size: $px-med;
+    font-size: $rem-med;
+    text-transform: uppercase;
+  }
+  
+  img {
+    bottom: 50%;
+    display: inline-block;
+    top: 50%;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  td {
+    text-align: center;
+  }
+  
+  .nutshell {
+    text-align: center;
+    letter-spacing: 3px;
+    letter-spacing: calc-rem(8px,10px);
+  }
+  
+  .resources {
+    text-align: center;
+    letter-spacing: 10px;
+    letter-spacing: calc-rem(8px,10px);
+  }
+}

@@ -1,0 +1,15 @@
+.learning {
+  @include span-columns(8,8);
+  margin-bottom: $px-line-base;
+  margin-bottom: $rem-line-base;
+  
+  img {
+    float: left;
+    margin-right: calc-per(10px, 306px);
+  }
+  
+  span {
+    margin-bottom: $px-line-base/2;
+    margin-bottom: $rem-line-base/2;
+  }
+}

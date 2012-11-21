@@ -1,0 +1,14 @@
+.rising-sun {
+  margin: 10px auto 0;
+  position: relative;
+  z-index: 10;
+  
+  @media (max-width:870px) {
+    margin: 10px auto 0;
+  }
+  
+  @media (max-width:540px) {
+    margin: 10px auto 0;
+    max-width: 100%;
+  }
+}

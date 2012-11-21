@@ -1,0 +1,10 @@
+.content {
+  @include span-columns(8);
+  
+  @media (max-width:760px) {
+    @include span-columns(12);
+    @include omega;
+  }
+  
+  margin-bottom: $px-line-base;
+}

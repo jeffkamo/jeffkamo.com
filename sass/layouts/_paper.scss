@@ -1,0 +1,6 @@
+.paper {
+  @include span-columns(3, 4);
+  float: none;
+  margin: 0 auto;
+  padding: calc-em($gutter-px, $px-small) calc-em($px-norm, $px-small);
+}

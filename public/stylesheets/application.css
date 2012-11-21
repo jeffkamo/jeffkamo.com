@@ -1,6 +1,6 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
-body { line-height: 1; }
+html { line-height: 1; }
 
 ol, ul { list-style: none; }
 
@@ -33,72 +33,110 @@ p, h1, h2, h3, h4, h5, h6, blockquote { margin-bottom: 11px; margin-bottom: 1.1r
 
 strong { font-weight: bold; }
 
-.wrapper { *zoom: 1; margin: auto; width: 64.875em; max-width: 100%; }
+.wrapper { *zoom: 1; max-width: 61.125em; _width: 61.125em; margin-left: auto; margin-right: auto; padding-left: 1.875em; padding-right: 1.875em; -webkit-background-origin: content; -moz-background-origin: content; -ms-background-origin: content-box; -o-background-origin: content-box; background-origin: content-box; -webkit-background-clip: content-box; -moz-background-clip: content-box; background-clip: content-box; }
 .wrapper:after { content: ""; display: table; clear: both; }
 
-header { height: 384px; margin: 0; overflow: hidden; padding: 0; width: 809px; margin: 10px auto 0; position: relative; z-index: 10; }
-header:before { content: url("../img/sun_background.png"); display: inline-block; font-size: 0; line-height: 0; }
-@media (max-width:870px) { header { height: 229px; margin: 0; overflow: hidden; padding: 0; width: 542px; margin: 10px auto 0; }
-  header:before { content: url("../img/sun_logo_med.jpg"); display: inline-block; font-size: 0; line-height: 0; } }
-@media (max-width:540px) { header { height: 263px; margin: 0; overflow: hidden; padding: 0; width: 331px; margin: 10px auto 0; max-width: 100%; }
-  header:before { content: url("../img/sun_logo_small.jpg"); display: inline-block; font-size: 0; line-height: 0; } }
+.about { width: 100%; float: left; margin-right: 4.6729%; display: inline; margin-bottom: 22px; margin-bottom: 2.2rem; overflow: hidden; }
+.about div { width: 47.66355%; float: left; margin-right: 4.6729%; display: inline; }
+@media (max-width: 499px) { .about div { width: 65.64417%; float: left; margin-right: 3.06748%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 17.17791%; padding-right: 17.17791%; } }
+.about div:nth-child(2n+0) { float: right; margin-right: 0; #margin-left: -1.875em; display: inline; }
+.about img { float: left; margin-right: 3.26797%; }
 
-section { margin-left: 2.89%; display: inline; float: left; width: 61.85%; margin-right: 2.89%; margin-bottom: 22px; }
-@media (max-width:760px) { section { margin-left: 2.89%; display: inline; float: left; width: 94.22%; margin-right: 2.89%; display: inline; float: right; margin-right: 2.89%; #margin-left: -1.875em; } }
-section h2 { border-bottom: 2px solid #707070; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 28px; font-size: 2.8rem; padding-top: 22px; padding-top: 2.2rem; text-transform: uppercase; }
-section h3 { font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 24px; font-size: 2.4rem; }
-section h2, section h3 { line-height: 1em; font-weight: bold; }
-section .projects, section .about, section .skills, section .learning { display: inline; float: left; width: 100%; margin-right: 4.673%; }
-section .about, section .skills, section .learning { margin-bottom: 22px; margin-bottom: 2.2rem; overflow: hidden; }
-section .projects figure { display: inline; float: left; width: 47.664%; margin-right: 4.673%; position: relative; }
-@media (max-width:760px) { section .projects figure { display: inline; float: left; width: 48.466%; margin-right: 3.067%; } }
-@media (max-width:499px) { section .projects figure { display: inline; float: left; width: 65.644%; margin-right: 3.067%; padding-left: 16.185%; padding-right: 16.185%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; } }
-section .projects figure:nth-child(2n+1) { display: inline; float: right; margin-right: 0; #margin-left: -1.875em; }
-@media (max-width:760px) { section .projects figure:nth-child(2n+1) { display: inline; float: right; margin-right: 0; #margin-left: -1.875em; } }
-section .projects figure figcaption { -moz-transition: opacity 0.5s ease-in, bottom 0.5s ease; -webkit-transition: opacity 0.5s ease-in, bottom 0.5s ease; -o-transition: opacity 0.5s ease-in, bottom 0.5s ease; transition: opacity 0.5s ease-in, bottom 0.5s ease; background: white; bottom: 0; border: 3px solid #707070; border-radius: 5px; opacity: 0; padding: 1em 1em 0 1em; position: absolute; z-index: 30; }
-section .projects figure:hover figcaption { bottom: -85px; opacity: 1; }
-section .projects figure img { -moz-transition: opacity 0.5s ease; -webkit-transition: opacity 0.5s ease; -o-transition: opacity 0.5s ease; transition: opacity 0.5s ease; background: white; border: 1px solid #d0d0d0; max-width: 92.81%; opacity: 0.6; padding: 3.268%; position: relative; z-index: 20; }
-section .projects figure:hover img { opacity: 1; }
-@media (min-width:500px) { section .projects h2 { border-bottom: 0; border-top: 8px solid #707070; font-size: 80px; font-size: 8rem; } }
-section .about div { display: inline; float: left; width: 47.664%; margin-right: 4.673%; }
-@media (max-width:499px) { section .about div { display: inline; float: left; width: 65.644%; margin-right: 3.067%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; padding-left: 16.185%; padding-right: 16.185%; } }
-section .about div:nth-child(2n+0) { display: inline; float: right; margin-right: 0; #margin-left: -1.875em; }
-section .about img { float: left; margin-right: 3.268%; }
-section .about .attributes { line-height: 30px; line-height: 3rem; }
-section .about .attributes h3 { color: #c76a54; }
-section .about .attributes ul li { font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed Italic", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-style: italic; font-size: 20px; font-size: 2rem; }
-section .skills p { display: inline; float: left; width: 47.664%; margin-right: 4.673%; }
-@media (max-width:499px) { section .skills p { display: inline; float: left; width: 100%; margin-right: 3.067%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; } }
-section .skills ul { display: inline; float: left; width: 47.664%; margin-right: 4.673%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; }
-@media (max-width:499px) { section .skills ul { display: inline; float: left; width: 100%; margin-right: 3.067%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; } }
-section .skills ul li { display: inline; float: left; width: 17.647%; margin-right: 9.804%; color: #c76a54; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 24px; font-size: 2.4rem; text-align: center; }
-section .skills ul li:nth-child(4n+0) { display: inline; float: right; margin-right: 0; #margin-left: -1.875em; }
-section .skills ul img { margin-top: 20px; margin-top: 2rem; }
-section .skills ul span { display: block; }
-section .learning img { float: left; margin-right: 3.268%; }
-section .learning span { color: #c76a54; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 24px; font-size: 2.4rem; margin-bottom: 11px; margin-bottom: 1.1rem; }
-section .learning .disciplines { font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed Italic", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-style: italic; font-size: 20px; font-size: 2rem; line-height: 30px; line-height: 3rem; }
-section .learning .disciplines > li:first-child { display: inline; float: left; width: 60.748%; margin-right: 4.673%; }
-@media (max-width:499px) { section .learning .disciplines > li:first-child { display: inline; float: left; width: 82.822%; margin-right: 3.067%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; padding-left: 8.092%; padding-right: 8.092%; } }
-section .learning .disciplines > li { display: inline; float: left; width: 34.579%; margin-right: 4.673%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; margin-bottom: 15px; margin-bottom: 1.5rem; }
-@media (max-width:499px) { section .learning .disciplines > li { display: inline; float: left; width: 82.822%; margin-right: 3.067%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; padding-left: 8.092%; padding-right: 8.092%; } }
+.bio { width: 31.28834%; float: left; margin-right: 3.06748%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; margin-bottom: 22px; position: relative; z-index: 20; }
+@media (max-width: 760px) { .bio { width: 65.64417%; float: left; margin-right: 3.06748%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 17.17791%; padding-right: 17.17791%; } }
+.bio .resources { margin-top: 22px; margin-top: 2.2rem; }
+.bio td { padding: 0.5em; }
 
-aside { display: inline; float: left; width: 29.48%; margin-right: 2.89%; display: inline; float: right; margin-right: 2.89%; #margin-left: -1.875em; font-size: 10px; font-size: 1rem; line-height: 18px; line-height: 1.8rem; margin-bottom: 22px; position: relative; z-index: 20; }
-@media (max-width:760px) { aside { margin-left: 2.89%; display: inline; float: left; width: 61.85%; margin-right: 2.89%; display: inline; float: right; margin-right: 2.89%; #margin-left: -1.875em; padding-left: 16.185%; padding-right: 16.185%; } }
-aside b { font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 12px; font-size: 1.2rem; }
-aside blockquote { font-size: 18px; font-size: 1.8rem; font-style: italic; text-align: center; }
-aside figcaption { display: none; }
-aside h2 { color: #549bc7; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 24px; font-size: 2.4rem; text-transform: uppercase; }
-aside h2.nutshell { text-align: center; letter-spacing: 3px; letter-spacing: 0.8rem; }
-aside h2.resources { text-align: center; letter-spacing: 10px; letter-spacing: 0.8rem; margin-top: 22px; margin-top: 2.2rem; }
-aside img { bottom: 50%; display: inline-block; top: 50%; }
-aside table { width: 100%; }
-aside td { text-align: center; padding: 0.5em; }
-aside .silk { background: url("../img/silk.jpg"); box-shadow: 0 0 8px #AAA; padding: 9.5em 0; }
-aside .paper { display: inline; float: left; width: 72.549%; margin-right: 9.804%; background: white; border-image: url("../img/scroll_border.gif"); border-width: 6px 0; padding: 3em 1.6em; }
-aside .silk, aside .paper { display: block; float: none; margin: 0 auto; overflow: hidden; }
+.content { width: 65.64417%; float: left; margin-right: 3.06748%; display: inline; margin-bottom: 22px; }
+@media (max-width: 760px) { .content { width: 100%; float: left; margin-right: 3.06748%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
 
-section img, aside img { -moz-transition: opacity 0.5s ease; -webkit-transition: opacity 0.5s ease; -o-transition: opacity 0.5s ease; transition: opacity 0.5s ease; opacity: 0.5; }
-section img:hover, aside img:hover { opacity: 1; }
+.disciplines__discipline { width: 34.57944%; float: left; margin-right: 4.6729%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; margin-bottom: 15px; margin-bottom: 1.5rem; }
+@media (max-width: 499px) { .disciplines__discipline { width: 82.82209%; float: left; margin-right: 3.06748%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 8.58896%; padding-right: 8.58896%; } }
 
-footer { clear: both; margin-left: 2.89%; margin-right: 2.89%; background: #707070; border-radius: 2px 2px 0 0; color: #efefef; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; letter-spacing: 0.2rem; opacity: 0.4; padding: 1.022%; text-align: center; }
+.disciplines__discipline:first-child { width: 60.74766%; float: left; margin-right: 4.6729%; display: inline; }
+@media (max-width: 499px) { .disciplines__discipline:first-child { width: 82.82209%; float: left; margin-right: 3.06748%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 8.58896%; padding-right: 8.58896%; } }
+
+.footer { clear: both; padding: 1.02249%; }
+
+.learning { width: 100%; float: left; margin-right: 4.6729%; display: inline; margin-bottom: 22px; margin-bottom: 2.2rem; }
+.learning img { float: left; margin-right: 3.26797%; }
+.learning span { margin-bottom: 11px; margin-bottom: 1.1rem; }
+
+.paper { width: 72.54902%; float: left; margin-right: 9.80392%; display: inline; float: none; margin: 0 auto; padding: 3em 1.6em; }
+
+.projects { width: 100%; float: left; margin-right: 4.6729%; display: inline; }
+
+.projects__project { width: 47.66355%; float: left; margin-right: 4.6729%; display: inline; position: relative; }
+@media (max-width: 760px) { .projects__project { width: 48.46626%; float: left; margin-right: 3.06748%; display: inline; } }
+@media (max-width: 499px) { .projects__project { width: 65.64417%; float: left; margin-right: 3.06748%; display: inline; padding-left: 17.17791%; padding-right: 17.17791%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
+.projects__project:nth-child(2n+1) { float: right; margin-right: 0; #margin-left: -1.875em; display: inline; }
+@media (max-width: 760px) { .projects__project:nth-child(2n+1) { float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
+.projects__project > figcaption { bottom: 0; padding: 1em 1em 0 1em; position: absolute; z-index: 30; }
+.projects__project:hover > figcaption { bottom: -85px; }
+.projects__project > img { max-width: 92.81046%; padding: 3.26797%; position: relative; z-index: 20; }
+
+.rising-sun { margin: 10px auto 0; position: relative; z-index: 10; }
+@media (max-width: 870px) { .rising-sun { margin: 10px auto 0; } }
+@media (max-width: 540px) { .rising-sun { margin: 10px auto 0; max-width: 100%; } }
+
+.silk { float: none; margin: 0 auto; padding: 9.5em 0; }
+
+.skills { width: 100%; float: left; margin-right: 4.6729%; display: inline; margin-bottom: 22px; margin-bottom: 2.2rem; overflow: hidden; }
+.skills p { width: 47.66355%; float: left; margin-right: 4.6729%; display: inline; }
+@media (max-width: 499px) { .skills p { width: 100%; float: left; margin-right: 3.06748%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
+.skills ul { width: 47.66355%; float: left; margin-right: 4.6729%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; }
+@media (max-width: 499px) { .skills ul { width: 100%; float: left; margin-right: 3.06748%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
+.skills ul li { width: 17.64706%; float: left; margin-right: 9.80392%; display: inline; }
+.skills ul li:nth-child(4n+0) { float: right; margin-right: 0; #margin-left: -1.875em; display: inline; }
+.skills ul img { margin-top: 20px; margin-top: 2rem; }
+
+.attributes { line-height: 30px; line-height: 3rem; }
+.attributes h3 { color: #c76a54; }
+.attributes ul li { font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed Italic", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-style: italic; font-size: 20px; font-size: 2rem; }
+
+.bio { font-size: 10px; font-size: 1rem; line-height: 18px; line-height: 1.8rem; }
+.bio b { font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 12px; font-size: 1.2rem; }
+.bio blockquote { font-size: 18px; font-size: 1.8rem; font-style: italic; text-align: center; }
+.bio figcaption { display: none; }
+.bio h2 { color: #549bc7; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 24px; font-size: 2.4rem; text-transform: uppercase; }
+.bio img { bottom: 50%; display: inline-block; top: 50%; }
+.bio table { width: 100%; }
+.bio td { text-align: center; }
+.bio .nutshell { text-align: center; letter-spacing: 3px; letter-spacing: 0.8rem; }
+.bio .resources { text-align: center; letter-spacing: 10px; letter-spacing: 0.8rem; }
+
+.disciplines { font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed Italic", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-style: italic; font-size: 20px; font-size: 2rem; line-height: 30px; line-height: 3rem; }
+
+.footer { background: #707070; border-radius: 2px 2px 0 0; color: #efefef; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; letter-spacing: 0.2rem; opacity: 0.4; text-align: center; }
+
+.headers { line-height: 1em; font-weight: bold; }
+
+.headers__level-1 { border-bottom: 2px solid #707070; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 28px; font-size: 2.8rem; padding-top: 22px; padding-top: 2.2rem; text-transform: uppercase; }
+
+.headers__level-2 { font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 24px; font-size: 2.4rem; }
+
+.learning { overflow: hidden; }
+.learning span { color: #c76a54; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 24px; font-size: 2.4rem; }
+
+.opaque-graphic { -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; -o-transition: opacity 0.5s ease; transition: opacity 0.5s ease; opacity: 0.5; }
+
+.paper { background: white; border-image: url("../img/scroll_border.gif"); border-width: 6px 0; display: block; overflow: hidden; }
+
+@media (min-width: 500px) { .projects h2 { border-bottom: 0; border-top: 8px solid #707070; font-size: 80px; font-size: 8rem; } }
+
+.projects__project figcaption { -webkit-transition: opacity 0.5s ease-in, bottom 0.5s ease; -moz-transition: opacity 0.5s ease-in, bottom 0.5s ease; -o-transition: opacity 0.5s ease-in, bottom 0.5s ease; transition: opacity 0.5s ease-in, bottom 0.5s ease; background: white; border: 3px solid #707070; border-radius: 5px; opacity: 0; }
+.projects__project:hover figcaption { opacity: 1; }
+.projects__project img { -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; -o-transition: opacity 0.5s ease; transition: opacity 0.5s ease; background: white; border: 1px solid #d0d0d0; opacity: 0.6; }
+.projects__project:hover img { opacity: 1; }
+
+.rising-sun { height: 384px; margin: 0; overflow: hidden; padding: 0; width: 809px; }
+.rising-sun:before { content: url("../img/sun_background.png"); display: inline-block; font-size: 0; line-height: 0; }
+@media (max-width: 870px) { .rising-sun { height: 229px; margin: 0; overflow: hidden; padding: 0; width: 542px; }
+  .rising-sun:before { content: url("../img/sun_logo_med.jpg"); display: inline-block; font-size: 0; line-height: 0; } }
+@media (max-width: 540px) { .rising-sun { height: 263px; margin: 0; overflow: hidden; padding: 0; width: 331px; }
+  .rising-sun:before { content: url("../img/sun_logo_small.jpg"); display: inline-block; font-size: 0; line-height: 0; } }
+
+.silk { background: url("../img/silk.jpg"); box-shadow: 0 0 8px #AAA; display: block; overflow: hidden; }
+
+.skills ul li { color: #c76a54; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 24px; font-size: 2.4rem; text-align: center; }
+.skills ul span { display: block; }

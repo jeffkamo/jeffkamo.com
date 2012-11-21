@@ -76,10 +76,10 @@ $rem-line-base: calc-rem($px-line-base,$px-small); // 2.2rem;
 
 // Grid ----------------------------------------------------------------------
 
-$total-cols       : 12;
-$col-width        : calc-em($column-px,$px-norm);
+$total-columns    : 12;
+$column-width     : calc-em($column-px,$px-norm);
 $gutter-width     : calc-em($gutter-px,$px-norm);
-$side-gutter-width: $gutter-width;
+$grid-padding     : $gutter-width;
 $show-grid-backgrounds: false;
 
 // Elements -----------------------------------------------------------

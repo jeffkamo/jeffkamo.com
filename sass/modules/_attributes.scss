@@ -1,0 +1,15 @@
+.attributes {
+  line-height: 30px;
+  line-height: calc-rem(30px,10px);
+  
+  h3 {
+    color: $color-strong;
+  }
+  
+  ul li {
+    font-family: $font-condensed-ital;
+    font-style: italic;
+    font-size: $px-semi;
+    font-size: $rem-semi;
+  }
+}

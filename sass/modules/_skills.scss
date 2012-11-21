@@ -1,0 +1,15 @@
+.skills {
+  ul {
+    li {
+      color: $color-strong;
+      font-family: $font-bold-condensed;
+      font-size: $px-med;
+      font-size: $rem-med;
+      text-align: center; 
+    }
+    
+    span {
+      display: block;
+    }
+  }
+}

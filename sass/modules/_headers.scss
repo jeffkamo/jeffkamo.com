@@ -1,0 +1,20 @@
+.headers {
+  line-height: 1em;
+  font-weight: bold;
+}
+
+.headers__level-1 {
+  border-bottom: 2px solid $color-body;
+  font-family: $font-bold-condensed;
+  font-size: $px-big;
+  font-size: $rem-big;
+  padding-top: $px-line-base;
+  padding-top: $rem-line-base;
+  text-transform: uppercase;
+}
+
+.headers__level-2 {
+  font-family: $font-bold-condensed;
+  font-size: $px-med;
+  font-size: $rem-med;
+}

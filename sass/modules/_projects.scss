@@ -1,0 +1,35 @@
+.projects {
+  @media (min-width:500px) { 
+    h2 {
+      border-bottom: 0;
+      border-top: 8px solid $color-body;
+      font-size: $px-huge;
+      font-size: $rem-huge;
+    }
+  }
+}
+
+.projects__project {
+  figcaption {
+    @include transition(opacity 0.5s ease-in,bottom 0.5s ease);
+    background: white;
+    border: 3px solid $color-body;
+    border-radius: 5px;
+    opacity: 0;
+  }
+  
+  &:hover figcaption {
+    opacity: 1;
+  }
+  
+  img {
+    @include transition(opacity 0.5s ease);
+    background: white;
+    border: 1px solid #d0d0d0;
+    opacity: 0.6;
+  }
+  
+  &:hover img {
+    opacity: 1;
+  }
+}

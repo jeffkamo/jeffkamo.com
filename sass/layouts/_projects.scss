@@ -1,0 +1,45 @@
+.projects {
+  @include span-columns(8,8);
+}
+
+.projects__project {
+  @include span-columns(4,8);
+  position: relative;
+  
+  @media (max-width:760px) {
+    @include span-columns(6,12);
+  }
+  
+  @media (max-width:499px) {
+    @include span-columns(8,12);
+    @include prefix(2);
+    @include suffix(2);
+    @include omega;
+  }
+  
+  &:nth-child(2n+1) {
+    @include omega;
+    
+    @media (max-width:760px) {
+      @include omega;
+    }
+  }
+  
+  & > figcaption {
+    bottom: 0;
+    padding: 1em 1em 0 1em;
+    position: absolute;
+    z-index: 30;
+  }
+  
+  &:hover > figcaption {
+    bottom: -85px;
+  }
+  
+  & > img {
+    max-width: calc-per(284px,306px);
+    padding: calc-per(10px,306px);
+    position: relative;
+    z-index: 20;
+  }
+}
