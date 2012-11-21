@@ -1,41 +1,65 @@
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
+/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html { line-height: 1; }
 
+/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul { list-style: none; }
 
+/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table { border-collapse: collapse; border-spacing: 0; }
 
+/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
 
+/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote { quotes: none; }
+/* line 103, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
 
+/* line 32, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img { border: none; }
 
+/* line 116, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
+/* line 3, ../../sass/base/_elements.scss */
 a { border-bottom: 1px solid #549bc7; color: #549bc7; text-decoration: none; }
-
+/* line 8, ../../sass/base/_elements.scss */
 a:hover { border: none; }
 
+/* line 13, ../../sass/base/_elements.scss */
 abbr { border-bottom: 1px dotted #BBB; }
 
+/* line 17, ../../sass/base/_elements.scss */
 b { font-weight: bold; }
 
+/* line 21, ../../sass/base/_elements.scss */
 body { background: #efefef url("../img/body_background.jpg"); color: #707070; font-family: myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 16px; font-size: 1.6rem; line-height: 22px; line-height: 2.2rem; }
 
+/* line 31, ../../sass/base/_elements.scss */
 html { font-size: 62.5%; }
 
+/* line 35, ../../sass/base/_elements.scss */
 img { max-width: 100%; }
 
+/* line 39, ../../sass/base/_elements.scss */
 p, h1, h2, h3, h4, h5, h6, blockquote { margin-bottom: 11px; margin-bottom: 1.1rem; }
 
+/* line 44, ../../sass/base/_elements.scss */
 strong { font-weight: bold; }
 
+/* line 3, ../../sass/base/_classes.scss */
+.opaque-graphic { -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; -o-transition: opacity 0.5s ease; transition: opacity 0.5s ease; opacity: 0.5; }
+
+/* line 12, ../../sass/base/_classes.scss */
 .wrapper { *zoom: 1; max-width: 61.125em; _width: 61.125em; margin-left: auto; margin-right: auto; padding-left: 1.875em; padding-right: 1.875em; -webkit-background-origin: content; -moz-background-origin: content; -ms-background-origin: content-box; -o-background-origin: content-box; background-origin: content-box; -webkit-background-clip: content-box; -moz-background-clip: content-box; background-clip: content-box; }
+/* line 38, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .wrapper:after { content: ""; display: table; clear: both; }
 
+/* line 23, ../../sass/404.scss */
 h1 { border-bottom: 3px solid #c76a54; clear: both; color: #c76a54; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 80px; font-size: 8rem; font-weight: bold; line-height: 1.5em; }
 
+/* line 34, ../../sass/404.scss */
 p { clear: both; font-color: #707070; font-size: 28px; font-size: 2.8rem; line-height: 1.5em; }

@@ -1,0 +1,46 @@
+// Base Elements -----------------------------------------------------------
+
+a {
+  border-bottom: 1px solid $color-link;
+  color: $color-link;
+  text-decoration: none;
+  
+  &:hover {
+    border: none;
+  }
+}
+
+abbr {
+  border-bottom: 1px dotted #BBB;
+}
+
+b {
+  font-weight: bold;
+}
+
+body {
+  background: $color-bg url('../img/body_background.jpg');
+  color: $color-body;
+  font-family: $font-base;
+  font-size: $px-norm;
+  font-size: $rem-norm;
+  line-height: $px-line-base;
+  line-height: $rem-line-base;
+}
+
+html {
+  font-size: 62.5%; // 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6, blockquote {
+  margin-bottom: $px-line-base/2;
+  margin-bottom: $rem-line-base/2;
+}
+
+strong {
+  font-weight: bold;
+}

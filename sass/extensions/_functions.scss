@@ -1,0 +1,11 @@
+// Functions ----------------------------------------------------------------------
+
+@function calc-em($target-px, $context) {
+  @return ($target-px / $context) * 1em;
+}
+@function calc-per($target-px, $context) {
+  @return (($target-px) / ($context)) * 100%;
+}
+@function calc-rem($target-px, $context) {
+  @return ($target-px / $context) * 1rem;
+}

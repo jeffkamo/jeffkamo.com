@@ -3,22 +3,6 @@
   
   margin-bottom: $px-line-base;
   margin-bottom: $rem-line-base;
-  overflow: hidden;
-  
-  div {
-    @include span-columns(4,8);
-    
-    @media (max-width:499px) {
-      @include span-columns(8,12);
-      @include omega;
-      @include prefix(2);
-      @include suffix(2);
-    }
-  }
-  
-  div:nth-child(2n+0) {
-    @include omega;
-  }
   
   img {
     float: left;

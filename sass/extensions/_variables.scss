@@ -1,0 +1,38 @@
+// Colors ---------------------------------------------------------------
+$color-bg    : #efefef;
+$color-body  : #707070;
+$color-link  : #549bc7;
+$color-strong: #c76a54;
+
+// Grid Related ----------------------------------------------------------
+$column-px: 54px;
+$gutter-px: 30px;
+
+// Typography ------------------------------------------------------------
+
+  // Font Family ---------------------------------------------------------
+  
+  $font-base: myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans","Gill Sans MT", Calibri, sans-serif;
+  $font-condensed: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  $font-condensed-ital: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed Italic", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  $font-bold-condensed: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  
+  // Font Size -----------------------------------------------------------
+  
+  $px-huge : 80px;
+  $px-big  : 28px;
+  $px-med  : 24px;
+  $px-semi : 20px;
+  $px-norm : 16px;
+  $px-small: 10px;
+  $rem-huge : calc-rem($px-huge,$px-small);  // 8.0rem;
+  $rem-big  : calc-rem($px-big,$px-small);   // 2.8rem;
+  $rem-med  : calc-rem($px-med,$px-small);   // 2.4rem;
+  $rem-semi : calc-rem($px-semi,$px-small);  // 2.4rem;
+  $rem-norm : calc-rem($px-norm,$px-small);  // 1.6rem;
+  $rem-small: calc-rem($px-small,$px-small); // 1.0rem;
+  
+  // Line Height ---------------------------------------------------------
+  
+  $px-line-base: 22px;
+  $rem-line-base: calc-rem($px-line-base,$px-small); // 2.2rem;

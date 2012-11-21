@@ -1,0 +1,7 @@
+// Grid ----------------------------------------------------------------------
+
+$total-columns        : 12;
+$column-width         : calc-em($column-px,$px-norm);
+$gutter-width         : calc-em($gutter-px,$px-norm);
+$grid-padding         : $gutter-width;
+$show-grid-backgrounds: false;

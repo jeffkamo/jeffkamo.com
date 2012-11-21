@@ -1,9 +1,0 @@
-// Generally used for images
-.opaque-graphic {
-  @include transition(opacity 0.5s ease);
-  opacity: 0.5;
-  
-  &:hover {
-    // opacity: 1;
-  }
-}
