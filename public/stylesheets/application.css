@@ -66,33 +66,33 @@ strong { font-weight: bold; }
 /* line 1, ../../sass/layouts/_attributes.scss */
 .attributes { width: 47.66355%; float: left; margin-right: 4.6729%; display: inline; }
 @media (max-width: 499px) { /* line 1, ../../sass/layouts/_attributes.scss */
-  .attributes { width: 65.64417%; float: left; margin-right: 3.06748%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 17.17791%; padding-right: 17.17791%; } }
-/* line 11, ../../sass/layouts/_attributes.scss */
-.attributes:nth-child(2n+0) { float: right; margin-right: 0; #margin-left: -1.875em; display: inline; }
+  .attributes { width: 65.64417%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 17.17791%; padding-right: 17.17791%; } }
+/* line 174, ../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.4/sass/susy/_grid.scss */
+.attributes:nth-child(2n) { float: right; margin-right: 0; }
 
 /* line 1, ../../sass/layouts/_bio.scss */
-.bio { width: 31.28834%; float: left; margin-right: 3.06748%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; margin-bottom: 22px; position: relative; z-index: 20; }
+.bio { width: 31.28834%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; margin-bottom: 22px; position: relative; z-index: 20; }
 @media (max-width: 760px) { /* line 1, ../../sass/layouts/_bio.scss */
-  .bio { width: 65.64417%; float: left; margin-right: 3.06748%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 17.17791%; padding-right: 17.17791%; } }
-/* line 15, ../../sass/layouts/_bio.scss */
+  .bio { width: 65.64417%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 17.17791%; padding-right: 17.17791%; } }
+/* line 13, ../../sass/layouts/_bio.scss */
 .bio .resources { margin-top: 22px; margin-top: 2.2rem; }
-/* line 20, ../../sass/layouts/_bio.scss */
+/* line 18, ../../sass/layouts/_bio.scss */
 .bio td { padding: 0.5em; }
 
 /* line 1, ../../sass/layouts/_content.scss */
 .content { width: 65.64417%; float: left; margin-right: 3.06748%; display: inline; margin-bottom: 22px; }
 @media (max-width: 760px) { /* line 1, ../../sass/layouts/_content.scss */
-  .content { width: 100%; float: left; margin-right: 3.06748%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
+  .content { width: 100%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
 
 /* line 1, ../../sass/layouts/_disciplines.scss */
-.disciplines__discipline { width: 34.57944%; float: left; margin-right: 4.6729%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; margin-bottom: 15px; margin-bottom: 1.5rem; }
+.disciplines__discipline { width: 34.57944%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; margin-bottom: 15px; margin-bottom: 1.5rem; }
 @media (max-width: 499px) { /* line 1, ../../sass/layouts/_disciplines.scss */
-  .disciplines__discipline { width: 82.82209%; float: left; margin-right: 3.06748%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 8.58896%; padding-right: 8.58896%; } }
+  .disciplines__discipline { width: 82.82209%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 8.58896%; padding-right: 8.58896%; } }
 
-/* line 15, ../../sass/layouts/_disciplines.scss */
+/* line 13, ../../sass/layouts/_disciplines.scss */
 .disciplines__discipline:first-child { width: 60.74766%; float: left; margin-right: 4.6729%; display: inline; }
-@media (max-width: 499px) { /* line 15, ../../sass/layouts/_disciplines.scss */
-  .disciplines__discipline:first-child { width: 82.82209%; float: left; margin-right: 3.06748%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 8.58896%; padding-right: 8.58896%; } }
+@media (max-width: 499px) { /* line 13, ../../sass/layouts/_disciplines.scss */
+  .disciplines__discipline:first-child { width: 82.82209%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 8.58896%; padding-right: 8.58896%; } }
 
 /* line 1, ../../sass/layouts/_footer.scss */
 .footer { clear: both; padding: 1.02249%; }
@@ -112,19 +112,17 @@ strong { font-weight: bold; }
 
 /* line 5, ../../sass/layouts/_projects.scss */
 .projects__project { width: 47.66355%; float: left; margin-right: 4.6729%; display: inline; position: relative; }
+/* line 174, ../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.4/sass/susy/_grid.scss */
+.projects__project:nth-child(3n) { float: right; margin-right: 0; }
 @media (max-width: 760px) { /* line 5, ../../sass/layouts/_projects.scss */
   .projects__project { width: 48.46626%; float: left; margin-right: 3.06748%; display: inline; } }
 @media (max-width: 499px) { /* line 5, ../../sass/layouts/_projects.scss */
-  .projects__project { width: 65.64417%; float: left; margin-right: 3.06748%; display: inline; padding-left: 17.17791%; padding-right: 17.17791%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
+  .projects__project { width: 65.64417%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 17.17791%; padding-right: 17.17791%; } }
 /* line 20, ../../sass/layouts/_projects.scss */
-.projects__project:nth-child(2n+1) { float: right; margin-right: 0; #margin-left: -1.875em; display: inline; }
-@media (max-width: 760px) { /* line 20, ../../sass/layouts/_projects.scss */
-  .projects__project:nth-child(2n+1) { float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
-/* line 28, ../../sass/layouts/_projects.scss */
 .projects__project > figcaption { bottom: 0; padding: 1em 1em 0 1em; position: absolute; z-index: 30; }
-/* line 35, ../../sass/layouts/_projects.scss */
+/* line 27, ../../sass/layouts/_projects.scss */
 .projects__project:hover > figcaption { bottom: -85px; }
-/* line 39, ../../sass/layouts/_projects.scss */
+/* line 31, ../../sass/layouts/_projects.scss */
 .projects__project > img { max-width: 92.81046%; padding: 3.26797%; position: relative; z-index: 20; }
 
 /* line 1, ../../sass/layouts/_rising-sun.scss */
@@ -142,16 +140,16 @@ strong { font-weight: bold; }
 /* line 8, ../../sass/layouts/_skills.scss */
 .skills p { width: 47.66355%; float: left; margin-right: 4.6729%; display: inline; }
 @media (max-width: 499px) { /* line 8, ../../sass/layouts/_skills.scss */
-  .skills p { width: 100%; float: left; margin-right: 3.06748%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
-/* line 16, ../../sass/layouts/_skills.scss */
-.skills ul { width: 47.66355%; float: left; margin-right: 4.6729%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; }
-@media (max-width: 499px) { /* line 16, ../../sass/layouts/_skills.scss */
-  .skills ul { width: 100%; float: left; margin-right: 3.06748%; display: inline; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
-/* line 25, ../../sass/layouts/_skills.scss */
+  .skills p { width: 100%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
+/* line 15, ../../sass/layouts/_skills.scss */
+.skills ul { width: 47.66355%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; }
+@media (max-width: 499px) { /* line 15, ../../sass/layouts/_skills.scss */
+  .skills ul { width: 100%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
+/* line 21, ../../sass/layouts/_skills.scss */
 .skills ul li { width: 17.64706%; float: left; margin-right: 9.80392%; display: inline; }
-/* line 29, ../../sass/layouts/_skills.scss */
-.skills ul li:nth-child(4n+0) { float: right; margin-right: 0; #margin-left: -1.875em; display: inline; }
-/* line 33, ../../sass/layouts/_skills.scss */
+/* line 174, ../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.4/sass/susy/_grid.scss */
+.skills ul li:nth-child(4n) { float: right; margin-right: 0; }
+/* line 26, ../../sass/layouts/_skills.scss */
 .skills ul img { margin-top: 20px; margin-top: 2rem; }
 
 /* line 1, ../../sass/modules/_about.scss */

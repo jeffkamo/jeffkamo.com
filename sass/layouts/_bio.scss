@@ -1,13 +1,11 @@
 .bio {
-  @include span-columns(4);
-  @include omega;
+  @include span-columns(4 omega);
   margin-bottom: $px-line-base;
   position: relative;
   z-index: 20;
   
   @media (max-width: 760px) {
-    @include span-columns(8);
-    @include omega;
+    @include span-columns(8 omega);
     @include prefix(2);
     @include suffix(2);
   }

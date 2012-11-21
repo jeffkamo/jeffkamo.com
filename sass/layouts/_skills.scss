@@ -1,33 +1,26 @@
 .skills {
-  @include span-columns(8,8);
+  @include span-columns(8, 8);
   
   margin-bottom: $px-line-base;
   margin-bottom: $rem-line-base;
   overflow: hidden;
   
   p {
-    @include span-columns(4,8);
-    @media (max-width:499px) {
-      @include span-columns(12,12);
-      @include omega;
+    @include span-columns(4, 8);
+    @media (max-width: 499px) {
+      @include span-columns(12 omega, 12);
     }
   }
   
   ul {
-    @include span-columns(4,8);
-    @include omega;
-    
-    @media (max-width:499px) {
-      @include span-columns(12,12);
-      @include omega;
+    @include span-columns(4 omega, 8);
+    @media (max-width: 499px) {
+      @include span-columns(12 omega, 12);
     }
     
     li {
-      @include span-columns (1,4);
-    }
-
-    li:nth-child(4n+0) {
-      @include omega;
+      @include span-columns(1, 4);
+      @include nth-omega(4n+0);
     }
     
     img {

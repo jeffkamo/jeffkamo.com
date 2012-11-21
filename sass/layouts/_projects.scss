@@ -1,29 +1,21 @@
 .projects {
-  @include span-columns(8,8);
+  @include span-columns(8, 8);
 }
 
 .projects__project {
-  @include span-columns(4,8);
-  position: relative;
-  
-  @media (max-width:760px) {
-    @include span-columns(6,12);
+  @include span-columns(4, 8);
+  @include nth-omega(2n+1);
+  @media (max-width: 760px) {
+    @include span-columns(6, 12);
   }
   
-  @media (max-width:499px) {
-    @include span-columns(8,12);
+  @media (max-width: 499px) {
+    @include span-columns(8 omega, 12);
     @include prefix(2);
     @include suffix(2);
-    @include omega;
   }
   
-  &:nth-child(2n+1) {
-    @include omega;
-    
-    @media (max-width:760px) {
-      @include omega;
-    }
-  }
+  position: relative;
   
   & > figcaption {
     bottom: 0;
@@ -37,8 +29,8 @@
   }
   
   & > img {
-    max-width: calc-per(284px,306px);
-    padding: calc-per(10px,306px);
+    max-width: calc-per(284px, 306px);
+    padding: calc-per(10px, 306px);
     position: relative;
     z-index: 20;
   }
