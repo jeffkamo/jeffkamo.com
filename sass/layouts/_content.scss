@@ -1,6 +1,5 @@
 .content {
   @include span-columns(8);
-  
   @media (max-width: 760px) {
     @include span-columns(12 omega);
   }

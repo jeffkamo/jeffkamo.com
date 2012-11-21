@@ -6,12 +6,11 @@
 
 .headers-level_1 {
   @extend .headers;
-  
   padding-top: $px-line-base;
   padding-top: $rem-line-base;
   text-transform: uppercase;
   
-  @media (min-width:500px) { 
+  @media (min-width: 500px) { 
     border-bottom: 0;
     border-top: 8px solid $color-body;
     font-size: $px-huge;
@@ -21,7 +20,6 @@
 
 .headers-level_2 {
   @extend .headers;
-  
   border-bottom: 2px solid $color-body;
   font-size: $px-big;
   font-size: $rem-big;
@@ -32,7 +30,6 @@
 
 .headers-level_3 {
   @extend .headers;
-  
   color: $color-strong;
   font-size: $px-med;
   font-size: $rem-med;

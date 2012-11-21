@@ -1,16 +1,9 @@
 .projects {
-  @media (min-width: 500px) { 
-    h2 {
-      border-bottom: 0;
-      border-top: 8px solid $color-body;
-      font-size: $px-huge;
-      font-size: $rem-huge;
-    }
-  }
+  // styles...
 }
 
 .projects--project {
-  figcaption {
+  & > figcaption {
     @include transition(opacity 0.5s ease-in, bottom 0.5s ease);
     background: white;
     border: 3px solid $color-body;
@@ -18,18 +11,18 @@
     opacity: 0;
   }
   
-  &:hover figcaption {
+  &:hover > figcaption {
     opacity: 1;
   }
+}
+
+.projects--screenshot {
+  @include transition(opacity 0.5s ease);
+  background: white;
+  border: 1px solid #d0d0d0;
+  opacity: 0.6;
   
-  img {
-    @include transition(opacity 0.5s ease);
-    background: white;
-    border: 1px solid #d0d0d0;
-    opacity: 0.6;
-  }
-  
-  &:hover img {
+  &:hover {
     opacity: 1;
   }
 }

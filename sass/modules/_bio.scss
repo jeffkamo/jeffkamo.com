@@ -4,31 +4,27 @@
   line-height: 18px;
   line-height: 1.8rem;
   
-  b {
+  & > b {
     font-family: $font-bold-condensed;
     font-size: 12px;
     font-size: 1.2rem;
   }
+}
+
+.bio--resource {
+  bottom: 50%;
+  display: inline-block;
+  top: 50%;
   
-  blockquote {
-    
-  }
-  
-  figcaption {
+  & > figcaption {
     display: none;
   }
+}
+
+.bio--resource_table {
+  width: 100%;
   
-  img {
-    bottom: 50%;
-    display: inline-block;
-    top: 50%;
-  }
-  
-  table {
-    width: 100%;
-  }
-  
-  td {
+  & > tbody tr td {
     text-align: center;
   }
 }

@@ -1,6 +1,5 @@
 .rising_sun {
   @include nir('../img/sun_background.png', 384px, 809px);
-  
   margin: 10px auto 1em;
   position: relative;
   z-index: 10;

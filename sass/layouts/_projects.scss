@@ -27,11 +27,11 @@
   &:hover > figcaption {
     bottom: -85px;
   }
-  
-  & > img {
-    max-width: calc-per(284px, 306px);
-    padding: calc-per(10px, 306px);
-    position: relative;
-    z-index: 20;
-  }
+}
+
+.projects--screenshot {
+  max-width: calc-per(284px, 306px);
+  padding: calc-per(10px, 306px);
+  position: relative;
+  z-index: 20;
 }

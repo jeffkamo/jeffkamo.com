@@ -75,10 +75,12 @@ strong { font-weight: bold; }
 .bio { width: 31.28834%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; margin-bottom: 22px; position: relative; z-index: 20; }
 @media (max-width: 760px) { /* line 1, ../../sass/layouts/_bio.scss */
   .bio { width: 65.64417%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 17.17791%; padding-right: 17.17791%; } }
-/* line 13, ../../sass/layouts/_bio.scss */
-.bio .resources { margin-top: 22px; margin-top: 2.2rem; }
-/* line 18, ../../sass/layouts/_bio.scss */
-.bio td { padding: 0.5em; }
+
+/* line 14, ../../sass/layouts/_bio.scss */
+.bio--resource { margin-top: 22px; margin-top: 2.2rem; }
+
+/* line 20, ../../sass/layouts/_bio.scss */
+.bio--resource_table > tbody tr td { padding: 0.5em; }
 
 /* line 1, ../../sass/layouts/_content.scss */
 .content { width: 65.64417%; float: left; margin-right: 3.06748%; display: inline; margin-bottom: 22px; }
@@ -90,9 +92,9 @@ strong { font-weight: bold; }
 @media (max-width: 499px) { /* line 1, ../../sass/layouts/_disciplines.scss */
   .disciplines--discipline { width: 82.82209%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 8.58896%; padding-right: 8.58896%; } }
 
-/* line 13, ../../sass/layouts/_disciplines.scss */
+/* line 12, ../../sass/layouts/_disciplines.scss */
 .disciplines--discipline:first-child { width: 60.74766%; float: left; margin-right: 4.6729%; display: inline; }
-@media (max-width: 499px) { /* line 13, ../../sass/layouts/_disciplines.scss */
+@media (max-width: 499px) { /* line 12, ../../sass/layouts/_disciplines.scss */
   .disciplines--discipline:first-child { width: 82.82209%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 8.58896%; padding-right: 8.58896%; } }
 
 /* line 1, ../../sass/layouts/_footer.scss */
@@ -100,10 +102,9 @@ strong { font-weight: bold; }
 
 /* line 1, ../../sass/layouts/_learning.scss */
 .learning { width: 100%; float: left; margin-right: 4.6729%; display: inline; margin-bottom: 22px; margin-bottom: 2.2rem; }
-/* line 6, ../../sass/layouts/_learning.scss */
-.learning img { float: left; margin-right: 3.26797%; }
-/* line 11, ../../sass/layouts/_learning.scss */
-.learning span { margin-bottom: 11px; margin-bottom: 1.1rem; }
+
+/* line 7, ../../sass/layouts/_learning.scss */
+.learning--graphic { float: left; margin-right: 3.26797%; }
 
 /* line 1, ../../sass/layouts/_paper.scss */
 .paper { width: 72.54902%; float: left; margin-right: 9.80392%; display: inline; float: none; margin: 0 auto; padding: 3em 1.6em; }
@@ -123,8 +124,9 @@ strong { font-weight: bold; }
 .projects--project > figcaption { bottom: 0; padding: 1em 1em 0 1em; position: absolute; z-index: 30; }
 /* line 27, ../../sass/layouts/_projects.scss */
 .projects--project:hover > figcaption { bottom: -85px; }
-/* line 31, ../../sass/layouts/_projects.scss */
-.projects--project > img { max-width: 92.81046%; padding: 3.26797%; position: relative; z-index: 20; }
+
+/* line 32, ../../sass/layouts/_projects.scss */
+.projects--screenshot { max-width: 92.81046%; padding: 3.26797%; position: relative; z-index: 20; }
 
 /* line 1, ../../sass/layouts/_rising-sun.scss */
 .rising_sun { height: 384px; margin: 0; overflow: hidden; padding: 0; width: 809px; margin: 10px auto 1em; position: relative; z-index: 10; }
@@ -139,21 +141,21 @@ strong { font-weight: bold; }
 /* line 1, ../../sass/layouts/_skills.scss */
 .skills { width: 100%; float: left; margin-right: 4.6729%; display: inline; margin-bottom: 22px; margin-bottom: 2.2rem; overflow: hidden; }
 
-/* line 9, ../../sass/layouts/_skills.scss */
+/* line 8, ../../sass/layouts/_skills.scss */
 .skills--overview { width: 47.66355%; float: left; margin-right: 4.6729%; display: inline; }
-@media (max-width: 499px) { /* line 9, ../../sass/layouts/_skills.scss */
+@media (max-width: 499px) { /* line 8, ../../sass/layouts/_skills.scss */
   .skills--overview { width: 100%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
 
-/* line 16, ../../sass/layouts/_skills.scss */
+/* line 15, ../../sass/layouts/_skills.scss */
 .skills--container { width: 47.66355%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; }
-@media (max-width: 499px) { /* line 16, ../../sass/layouts/_skills.scss */
+@media (max-width: 499px) { /* line 15, ../../sass/layouts/_skills.scss */
   .skills--container { width: 100%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
 
-/* line 23, ../../sass/layouts/_skills.scss */
+/* line 22, ../../sass/layouts/_skills.scss */
 .skills--skill { width: 17.64706%; float: left; margin-right: 9.80392%; display: inline; }
 /* line 174, ../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.4/sass/susy/_grid.scss */
 .skills--skill:nth-child(4n) { float: right; margin-right: 0; }
-/* line 27, ../../sass/layouts/_skills.scss */
+/* line 26, ../../sass/layouts/_skills.scss */
 .skills--skill > img { margin-top: 20px; margin-top: 2rem; }
 
 /* line 1, ../../sass/modules/_about.scss */
@@ -168,17 +170,19 @@ strong { font-weight: bold; }
 /* line 1, ../../sass/modules/_bio.scss */
 .bio { font-size: 10px; font-size: 1rem; line-height: 18px; line-height: 1.8rem; }
 /* line 7, ../../sass/modules/_bio.scss */
-.bio b { font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 12px; font-size: 1.2rem; }
-/* line 17, ../../sass/modules/_bio.scss */
-.bio figcaption { display: none; }
-/* line 21, ../../sass/modules/_bio.scss */
-.bio img { bottom: 50%; display: inline-block; top: 50%; }
-/* line 27, ../../sass/modules/_bio.scss */
-.bio table { width: 100%; }
-/* line 31, ../../sass/modules/_bio.scss */
-.bio td { text-align: center; }
+.bio > b { font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 12px; font-size: 1.2rem; }
 
-/* line 36, ../../sass/modules/_bio.scss */
+/* line 14, ../../sass/modules/_bio.scss */
+.bio--resource { bottom: 50%; display: inline-block; top: 50%; }
+/* line 19, ../../sass/modules/_bio.scss */
+.bio--resource > figcaption { display: none; }
+
+/* line 24, ../../sass/modules/_bio.scss */
+.bio--resource_table { width: 100%; }
+/* line 27, ../../sass/modules/_bio.scss */
+.bio--resource_table > tbody tr td { text-align: center; }
+
+/* line 32, ../../sass/modules/_bio.scss */
 .bio--quote { font-size: 18px; font-size: 1.8rem; font-style: italic; text-align: center; }
 
 /* line 1, ../../sass/modules/_disciplines.scss */
@@ -195,13 +199,13 @@ strong { font-weight: bold; }
 @media (min-width: 500px) { /* line 7, ../../sass/modules/_headers.scss */
   .headers-level_1 { border-bottom: 0; border-top: 8px solid #707070; font-size: 80px; font-size: 8rem; } }
 
-/* line 22, ../../sass/modules/_headers.scss */
+/* line 21, ../../sass/modules/_headers.scss */
 .headers-level_2 { border-bottom: 2px solid #707070; font-size: 28px; font-size: 2.8rem; padding-top: 22px; padding-top: 2.2rem; text-transform: uppercase; }
 
-/* line 33, ../../sass/modules/_headers.scss */
+/* line 31, ../../sass/modules/_headers.scss */
 .headers-level_3 { color: #c76a54; font-size: 24px; font-size: 2.4rem; font-style: normal; font-weight: normal; }
 
-/* line 43, ../../sass/modules/_headers.scss */
+/* line 40, ../../sass/modules/_headers.scss */
 .headers--aside { color: #549bc7; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 24px; font-size: 2.4rem; letter-spacing: 0.8rem; text-align: center; text-transform: uppercase; }
 
 /* line 1, ../../sass/modules/_learning.scss */
@@ -210,17 +214,15 @@ strong { font-weight: bold; }
 /* line 1, ../../sass/modules/_paper.scss */
 .paper { background: white; border-image: url("../img/scroll_border.gif"); border-width: 6px 0; display: block; overflow: hidden; }
 
-@media (min-width: 500px) { /* line 3, ../../sass/modules/_projects.scss */
-  .projects h2 { border-bottom: 0; border-top: 8px solid #707070; font-size: 80px; font-size: 8rem; } }
+/* line 6, ../../sass/modules/_projects.scss */
+.projects--project > figcaption { -webkit-transition: opacity 0.5s ease-in, bottom 0.5s ease; -moz-transition: opacity 0.5s ease-in, bottom 0.5s ease; -o-transition: opacity 0.5s ease-in, bottom 0.5s ease; transition: opacity 0.5s ease-in, bottom 0.5s ease; background: white; border: 3px solid #707070; border-radius: 5px; opacity: 0; }
+/* line 14, ../../sass/modules/_projects.scss */
+.projects--project:hover > figcaption { opacity: 1; }
 
-/* line 13, ../../sass/modules/_projects.scss */
-.projects--project figcaption { -webkit-transition: opacity 0.5s ease-in, bottom 0.5s ease; -moz-transition: opacity 0.5s ease-in, bottom 0.5s ease; -o-transition: opacity 0.5s ease-in, bottom 0.5s ease; transition: opacity 0.5s ease-in, bottom 0.5s ease; background: white; border: 3px solid #707070; border-radius: 5px; opacity: 0; }
-/* line 21, ../../sass/modules/_projects.scss */
-.projects--project:hover figcaption { opacity: 1; }
+/* line 19, ../../sass/modules/_projects.scss */
+.projects--screenshot { -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; -o-transition: opacity 0.5s ease; transition: opacity 0.5s ease; background: white; border: 1px solid #d0d0d0; opacity: 0.6; }
 /* line 25, ../../sass/modules/_projects.scss */
-.projects--project img { -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; -o-transition: opacity 0.5s ease; transition: opacity 0.5s ease; background: white; border: 1px solid #d0d0d0; opacity: 0.6; }
-/* line 32, ../../sass/modules/_projects.scss */
-.projects--project:hover img { opacity: 1; }
+.projects--screenshot:hover { opacity: 1; }
 
 @media (max-width: 870px) { /* line 1, ../../sass/modules/_rising-sun.scss */
   .rising_sun { height: 229px; margin: 0; overflow: hidden; padding: 0; width: 542px; }

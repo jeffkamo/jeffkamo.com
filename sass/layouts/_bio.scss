@@ -9,13 +9,15 @@
     @include prefix(2);
     @include suffix(2);
   }
-  
-  .resources {
-    margin-top: $px-line-base;
-    margin-top: $rem-line-base;
-  }
-  
-  td {
+}
+
+.bio--resource {
+  margin-top: $px-line-base;
+  margin-top: $rem-line-base;
+}
+
+.bio--resource_table {
+  & > tbody tr td {
     padding: 0.5em;
   }
 }
