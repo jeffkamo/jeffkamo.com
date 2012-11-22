@@ -1,9 +1,13 @@
 require 'sinatra'
 
 get '/' do
-  erb :index
+  erb :index, :layout => :layout
+end
+
+get '/gallery' do
+  erb :gallery, :layout => :layout
 end
 
 error 404 do
-  erb :notfound
+  erb :notfound, :layout => :layout
 end
