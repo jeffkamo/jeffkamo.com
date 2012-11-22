@@ -36,25 +36,25 @@ abbr { border-bottom: 1px dotted #BBB; }
 b { font-weight: bold; }
 
 /* line 21, ../../sass/base/_elements.scss */
-body { background: #efefef url("../img/body_background.jpg"); color: #707070; font-family: myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 16px; font-size: 1.6rem; line-height: 22px; line-height: 2.2rem; }
+body { background: #efefef url("../img/body_background.jpg"); color: #707070; font-family: myriad-pro-1, myriad-pro-2, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 16px; font-size: 1.6rem; height: 100%; line-height: 22px; line-height: 2.2rem; }
 
-/* line 31, ../../sass/base/_elements.scss */
-html { font-size: 62.5%; }
+/* line 32, ../../sass/base/_elements.scss */
+html { font-size: 62.5%; height: 100%; }
 
-/* line 35, ../../sass/base/_elements.scss */
+/* line 37, ../../sass/base/_elements.scss */
 img { max-width: 100%; }
 
-/* line 39, ../../sass/base/_elements.scss */
+/* line 41, ../../sass/base/_elements.scss */
 p, h1, h2, h3, h4, h5, h6, blockquote { margin-bottom: 11px; margin-bottom: 1.1rem; }
 
-/* line 44, ../../sass/base/_elements.scss */
+/* line 46, ../../sass/base/_elements.scss */
 strong { font-weight: bold; }
 
 /* line 3, ../../sass/base/_classes.scss */
 .opaque_graphic { -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; -o-transition: opacity 0.5s ease; transition: opacity 0.5s ease; opacity: 0.5; }
 
 /* line 12, ../../sass/base/_classes.scss */
-.wrapper { *zoom: 1; max-width: 61.125em; _width: 61.125em; margin-left: auto; margin-right: auto; padding-left: 1.875em; padding-right: 1.875em; -webkit-background-origin: content; -moz-background-origin: content; -ms-background-origin: content-box; -o-background-origin: content-box; background-origin: content-box; -webkit-background-clip: content-box; -moz-background-clip: content-box; background-clip: content-box; }
+.wrapper { *zoom: 1; max-width: 61.125em; _width: 61.125em; margin-left: auto; margin-right: auto; padding-left: 1.875em; padding-right: 1.875em; -webkit-background-origin: content; -moz-background-origin: content; -ms-background-origin: content-box; -o-background-origin: content-box; background-origin: content-box; -webkit-background-clip: content-box; -moz-background-clip: content-box; background-clip: content-box; margin-bottom: -50px; margin-bottom: -5rem; min-height: 100%; height: auto !important; height: 100%; }
 /* line 38, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .wrapper:after { content: ""; display: table; clear: both; }
 

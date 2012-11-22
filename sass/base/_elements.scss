@@ -24,12 +24,14 @@ body {
   font-family: $font-base;
   font-size: $px-norm;
   font-size: $rem-norm;
+  height: 100%;
   line-height: $px-line-base;
   line-height: $rem-line-base;
 }
 
 html {
   font-size: 62.5%; // 10px;
+  height: 100%;
 }
 
 img {
