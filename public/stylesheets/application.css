@@ -67,14 +67,14 @@ strong { font-weight: bold; }
 /* line 1, ../../sass/layouts/_attributes.scss */
 .attributes { width: 47.66355%; float: left; margin-right: 4.6729%; display: inline; }
 @media (max-width: 499px) { /* line 1, ../../sass/layouts/_attributes.scss */
-  .attributes { width: 65.64417%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 17.17791%; padding-right: 17.17791%; } }
+  .attributes { width: 65.64417%; float: left; margin-right: 0; #margin-right: -1.875em; display: inline; padding-left: 17.17791%; padding-right: 17.17791%; } }
 /* line 174, ../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.4/sass/susy/_grid.scss */
-.attributes:nth-child(2n) { float: right; margin-right: 0; }
+.attributes:nth-child(2n) { float: left; margin-right: 0; }
 
 /* line 1, ../../sass/layouts/_bio.scss */
-.bio { width: 31.28834%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; margin-bottom: 22px; position: relative; z-index: 20; }
+.bio { width: 31.28834%; float: left; margin-right: 0; #margin-right: -1.875em; display: inline; margin-bottom: 22px; position: relative; z-index: 20; }
 @media (max-width: 760px) { /* line 1, ../../sass/layouts/_bio.scss */
-  .bio { width: 65.64417%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 17.17791%; padding-right: 17.17791%; } }
+  .bio { width: 65.64417%; float: left; margin-right: 0; #margin-right: -1.875em; display: inline; padding-left: 17.17791%; padding-right: 17.17791%; } }
 
 /* line 14, ../../sass/layouts/_bio.scss */
 .bio--resource { margin-top: 22px; margin-top: 2.2rem; }
@@ -85,20 +85,27 @@ strong { font-weight: bold; }
 /* line 1, ../../sass/layouts/_content.scss */
 .content { width: 65.64417%; float: left; margin-right: 3.06748%; display: inline; margin-bottom: 22px; }
 @media (max-width: 760px) { /* line 1, ../../sass/layouts/_content.scss */
-  .content { width: 100%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
+  .content { width: 100%; float: left; margin-right: 0; #margin-right: -1.875em; display: inline; } }
 
 /* line 1, ../../sass/layouts/_disciplines.scss */
-.disciplines--discipline { width: 34.57944%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; margin-bottom: 15px; margin-bottom: 1.5rem; }
+.disciplines--discipline { width: 34.57944%; float: left; margin-right: 0; #margin-right: -1.875em; display: inline; margin-bottom: 15px; margin-bottom: 1.5rem; }
 @media (max-width: 499px) { /* line 1, ../../sass/layouts/_disciplines.scss */
-  .disciplines--discipline { width: 82.82209%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 8.58896%; padding-right: 8.58896%; } }
+  .disciplines--discipline { width: 82.82209%; float: left; margin-right: 0; #margin-right: -1.875em; display: inline; padding-left: 8.58896%; padding-right: 8.58896%; } }
 
 /* line 12, ../../sass/layouts/_disciplines.scss */
 .disciplines--discipline:first-child { width: 60.74766%; float: left; margin-right: 4.6729%; display: inline; }
 @media (max-width: 499px) { /* line 12, ../../sass/layouts/_disciplines.scss */
-  .disciplines--discipline:first-child { width: 82.82209%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 8.58896%; padding-right: 8.58896%; } }
+  .disciplines--discipline:first-child { width: 82.82209%; float: left; margin-right: 0; #margin-right: -1.875em; display: inline; padding-left: 8.58896%; padding-right: 8.58896%; } }
 
 /* line 1, ../../sass/layouts/_footer.scss */
 .footer { clear: both; padding: 1.02249%; }
+
+/* line 5, ../../sass/layouts/_gallery.scss */
+.gallery--item { width: 31.28834%; float: left; margin-right: 3.06748%; display: inline; margin-bottom: 1em; }
+/* line 174, ../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.4/sass/susy/_grid.scss */
+.gallery--item:nth-child(3n+1) { float: left; margin-right: 0; }
+/* line 10, ../../sass/layouts/_gallery.scss */
+.gallery--item:nth-child(3n+2) { clear: left; }
 
 /* line 1, ../../sass/layouts/_learning.scss */
 .learning { width: 100%; float: left; margin-right: 4.6729%; display: inline; margin-bottom: 22px; margin-bottom: 2.2rem; }
@@ -115,11 +122,11 @@ strong { font-weight: bold; }
 /* line 5, ../../sass/layouts/_projects.scss */
 .projects--project { width: 47.66355%; float: left; margin-right: 4.6729%; display: inline; position: relative; }
 /* line 174, ../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.4/sass/susy/_grid.scss */
-.projects--project:nth-child(3n) { float: right; margin-right: 0; }
+.projects--project:nth-child(3n) { float: left; margin-right: 0; }
 @media (max-width: 760px) { /* line 5, ../../sass/layouts/_projects.scss */
   .projects--project { width: 48.46626%; float: left; margin-right: 3.06748%; display: inline; } }
 @media (max-width: 499px) { /* line 5, ../../sass/layouts/_projects.scss */
-  .projects--project { width: 65.64417%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; padding-left: 17.17791%; padding-right: 17.17791%; } }
+  .projects--project { width: 65.64417%; float: left; margin-right: 0; #margin-right: -1.875em; display: inline; padding-left: 17.17791%; padding-right: 17.17791%; } }
 /* line 20, ../../sass/layouts/_projects.scss */
 .projects--project > figcaption { bottom: 0; padding: 1em 1em 0 1em; position: absolute; z-index: 30; }
 /* line 27, ../../sass/layouts/_projects.scss */
@@ -144,17 +151,17 @@ strong { font-weight: bold; }
 /* line 8, ../../sass/layouts/_skills.scss */
 .skills--overview { width: 47.66355%; float: left; margin-right: 4.6729%; display: inline; }
 @media (max-width: 499px) { /* line 8, ../../sass/layouts/_skills.scss */
-  .skills--overview { width: 100%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
+  .skills--overview { width: 100%; float: left; margin-right: 0; #margin-right: -1.875em; display: inline; } }
 
 /* line 15, ../../sass/layouts/_skills.scss */
-.skills--container { width: 47.66355%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; }
+.skills--container { width: 47.66355%; float: left; margin-right: 0; #margin-right: -1.875em; display: inline; }
 @media (max-width: 499px) { /* line 15, ../../sass/layouts/_skills.scss */
-  .skills--container { width: 100%; float: right; margin-right: 0; #margin-left: -1.875em; display: inline; } }
+  .skills--container { width: 100%; float: left; margin-right: 0; #margin-right: -1.875em; display: inline; } }
 
 /* line 22, ../../sass/layouts/_skills.scss */
 .skills--skill { width: 17.64706%; float: left; margin-right: 9.80392%; display: inline; }
 /* line 174, ../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.4/sass/susy/_grid.scss */
-.skills--skill:nth-child(4n) { float: right; margin-right: 0; }
+.skills--skill:nth-child(4n) { float: left; margin-right: 0; }
 /* line 26, ../../sass/layouts/_skills.scss */
 .skills--skill > img { margin-top: 20px; margin-top: 2rem; }
 
@@ -189,7 +196,7 @@ strong { font-weight: bold; }
 .disciplines { line-height: 30px; line-height: 3rem; }
 
 /* line 1, ../../sass/modules/_footer.scss */
-.footer { background: #707070; border-radius: 2px 2px 0 0; color: #efefef; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; letter-spacing: 0.2rem; opacity: 0.4; text-align: center; }
+.footer { background: #222; border-radius: 2px 2px 0 0; color: #efefef; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; letter-spacing: 0.2rem; opacity: 0.4; text-align: center; }
 
 /* line 1, ../../sass/modules/_headers.scss */
 .headers, .headers-level_1, .headers-level_2, .headers-level_3 { font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-weight: bold; line-height: 1em; }
