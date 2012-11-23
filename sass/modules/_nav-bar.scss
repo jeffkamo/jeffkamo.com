@@ -1,0 +1,18 @@
+.nav_bar {
+  background: $color-body;
+  color: white;
+  padding: 0.5em 1em 0;
+  
+  & > a {
+    @include transition-property(opacity);
+    @include transition-duration(0.1s);
+    
+    color: white;
+    border-bottom: none;
+    opacity: 0.5;
+    
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

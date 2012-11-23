@@ -1,0 +1,14 @@
+.gallery {
+  // styles...
+}
+
+.gallery--link {
+  @include nir('../img/icon_new_window.gif', 12px, 14px);
+  border: none;
+  line-height: 1em;
+  opacity: 0.6;
+  
+  &:hover {
+    opacity: 1;
+  }
+}

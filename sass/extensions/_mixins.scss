@@ -1,6 +1,7 @@
 // Mixins ----------------------------------------------------------------------
 
 @mixin nir($img,$height,$width) {
+  display: inline-block;
   height: $height;
   margin: 0;
   overflow: hidden;

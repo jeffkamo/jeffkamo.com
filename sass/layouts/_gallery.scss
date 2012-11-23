@@ -1,13 +1,17 @@
 .gallery {
-  // @include span-columns(12 omega);
+  // styles...
 }
 
 .gallery--item {
   @include span-columns(4, 12);
-  @include nth-omega('3n+1');
+  @include nth-omega('3n+0');
   margin-bottom: 1em;
   
-  &:nth-child(3n+2) {
+  &:nth-child(3n+1) {
     clear: left;
   }
+}
+
+.gallery--link {
+  // float: right;
 }
