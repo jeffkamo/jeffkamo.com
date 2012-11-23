@@ -207,19 +207,25 @@ strong { font-weight: bold; }
 
 /* line 1, ../../sass/modules/_headers.scss */
 .headers, .headers-level_1, .headers-level_2, .headers-level_3 { font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-weight: bold; line-height: 1em; }
+/* line 6, ../../sass/modules/_headers.scss */
+.headers > a, .headers-level_1 > a, .headers-level_2 > a, .headers-level_3 > a { border-bottom: none; }
+/* line 9, ../../sass/modules/_headers.scss */
+.headers > a:hover, .headers-level_1 > a:hover, .headers-level_2 > a:hover, .headers-level_3 > a:hover { border-bottom: 1px solid #549bc7; }
 
-/* line 7, ../../sass/modules/_headers.scss */
+/* line 15, ../../sass/modules/_headers.scss */
 .headers-level_1 { padding-top: 22px; padding-top: 2.2rem; text-transform: uppercase; }
-@media (min-width: 500px) { /* line 7, ../../sass/modules/_headers.scss */
+@media (min-width: 500px) { /* line 15, ../../sass/modules/_headers.scss */
   .headers-level_1 { border-bottom: 0; border-top: 8px solid #707070; font-size: 80px; font-size: 8rem; } }
+/* line 28, ../../sass/modules/_headers.scss */
+.headers-level_1 > a { font-size: 16px; font-size: 1.6rem; }
 
-/* line 21, ../../sass/modules/_headers.scss */
+/* line 34, ../../sass/modules/_headers.scss */
 .headers-level_2 { border-bottom: 2px solid #707070; font-size: 28px; font-size: 2.8rem; padding-top: 22px; padding-top: 2.2rem; text-transform: uppercase; }
 
-/* line 31, ../../sass/modules/_headers.scss */
+/* line 44, ../../sass/modules/_headers.scss */
 .headers-level_3 { color: #c76a54; font-size: 24px; font-size: 2.4rem; font-style: normal; font-weight: normal; }
 
-/* line 40, ../../sass/modules/_headers.scss */
+/* line 53, ../../sass/modules/_headers.scss */
 .headers--aside { color: #549bc7; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 24px; font-size: 2.4rem; letter-spacing: 0.8rem; text-align: center; text-transform: uppercase; }
 
 /* line 1, ../../sass/modules/_learning.scss */

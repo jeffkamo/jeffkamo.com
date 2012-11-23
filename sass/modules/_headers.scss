@@ -2,6 +2,14 @@
   font-family: $font-bold-condensed;
   font-weight: bold;
   line-height: 1em;
+  
+  & > a {
+    border-bottom: none;
+    
+    &:hover {
+      border-bottom: 1px solid $color-link;
+    }
+  }
 }
 
 .headers-level_1 {
@@ -15,6 +23,11 @@
     border-top: 8px solid $color-body;
     font-size: $px-huge;
     font-size: $rem-huge;
+  }
+  
+  & > a {
+    font-size: $px-norm;
+    font-size: $rem-norm;
   }
 }
 
