@@ -13,11 +13,31 @@
 }
 
 .skills--skill {
-  @include span-columns(1, 8);
-  @include nth-omega(8n+0);
+  display: block;
+  float: left;
+  width: 16.66%;
   
-  & > img {
-    margin-top: $px-semi;
-    margin-top: $rem-semi;
+  &:nth-child(6n+1) {
+    clear: left;
+  }
+  
+  &:nth-child(6n+0):not(:last-child):after {
+    clear: both;
+    content: ' ';
+    display: block;
+    margin-bottom: 2em;
+  }
+  
+  & > span {
+    display: inline-block;
+    max-width: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  & > span + img {
+    margin-top: 1em;
   }
 }
