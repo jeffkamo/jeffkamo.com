@@ -59,4 +59,8 @@
   letter-spacing: calc-rem(8px, 10px);
   text-align: center;
   text-transform: uppercase;
+  
+  & ~ .headers--aside {
+    margin-top: 1.5em;
+  }
 }

@@ -122,7 +122,7 @@ strong { font-weight: bold; }
 .learning--graphic { float: left; margin-right: 22px; margin-right: 2.2rem; }
 
 /* line 1, ../../sass/layouts/_paper.scss */
-.paper { width: 72.54902%; float: left; margin-right: 9.80392%; display: inline; float: none; margin: 0 auto; padding: 3em 1.6em; }
+.paper { width: 72.54902%; float: left; margin-right: 9.80392%; display: inline; float: none; margin: 0 auto; padding: 3rem 1.6rem; }
 
 /* line 1, ../../sass/layouts/_projects.scss */
 .projects { width: 100%; float: left; margin-right: 4.6729%; display: inline; }
@@ -179,7 +179,7 @@ strong { font-weight: bold; }
 .attributes { line-height: 30px; line-height: 3rem; }
 
 /* line 1, ../../sass/modules/_bio.scss */
-.bio { font-size: 10px; font-size: 1rem; line-height: 18px; line-height: 1.8rem; }
+.bio { font-size: 12px; font-size: 1.2rem; line-height: 18px; line-height: 1.8rem; }
 /* line 7, ../../sass/modules/_bio.scss */
 .bio > b { font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Bold Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 12px; font-size: 1.2rem; }
 
@@ -231,6 +231,8 @@ strong { font-weight: bold; }
 
 /* line 54, ../../sass/modules/_headers.scss */
 .headers--aside { color: #549bc7; font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-size: 24px; font-size: 2.4rem; letter-spacing: 0.8rem; text-align: center; text-transform: uppercase; }
+/* line 63, ../../sass/modules/_headers.scss */
+.headers--aside ~ .headers--aside { margin-top: 1.5em; }
 
 /* line 1, ../../sass/modules/_learning.scss */
 .learning { overflow: hidden; }
