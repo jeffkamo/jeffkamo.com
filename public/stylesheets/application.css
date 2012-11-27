@@ -111,7 +111,7 @@ strong { font-weight: bold; }
 .learning { width: 100%; float: left; margin-right: 4.6729%; display: inline; margin-bottom: 22px; margin-bottom: 2.2rem; }
 
 /* line 7, ../../sass/layouts/_learning.scss */
-.learning--graphic { float: left; margin-right: 3.26797%; }
+.learning--graphic { float: left; margin-right: 22px; margin-right: 2.2rem; }
 
 /* line 1, ../../sass/layouts/_paper.scss */
 .paper { width: 72.54902%; float: left; margin-right: 9.80392%; display: inline; float: none; margin: 0 auto; padding: 3em 1.6em; }
@@ -136,7 +136,7 @@ strong { font-weight: bold; }
 .projects--screenshot { max-width: 92.81046%; padding: 3.26797%; position: relative; z-index: 20; }
 
 /* line 1, ../../sass/layouts/_rising-sun.scss */
-.rising_sun { display: inline-block; height: 384px; margin: 0; overflow: hidden; padding: 0; width: 809px; margin: 10px auto 1em; position: relative; z-index: 10; }
+.rising_sun { display: inline-block; height: 384px; margin: 0; overflow: hidden; padding: 0; width: 809px; display: block; margin: 10px auto 1em; position: relative; z-index: 10; }
 /* line 11, ../../sass/extensions/_mixins.scss */
 .rising_sun:before { content: url("../img/sun_background.png"); display: inline-block; font-size: 0; line-height: 0; }
 @media (max-width: 540px) { /* line 1, ../../sass/layouts/_rising-sun.scss */
@@ -149,20 +149,15 @@ strong { font-weight: bold; }
 .skills { width: 100%; float: left; margin-right: 4.6729%; display: inline; margin-bottom: 22px; margin-bottom: 2.2rem; overflow: hidden; }
 
 /* line 8, ../../sass/layouts/_skills.scss */
-.skills--overview { width: 47.66355%; float: left; margin-right: 4.6729%; display: inline; }
+.skills--container { width: 100%; float: left; margin-right: 0; #margin-right: -1.875em; display: inline; }
 @media (max-width: 499px) { /* line 8, ../../sass/layouts/_skills.scss */
-  .skills--overview { width: 100%; float: left; margin-right: 0; #margin-right: -1.875em; display: inline; } }
-
-/* line 15, ../../sass/layouts/_skills.scss */
-.skills--container { width: 47.66355%; float: left; margin-right: 0; #margin-right: -1.875em; display: inline; }
-@media (max-width: 499px) { /* line 15, ../../sass/layouts/_skills.scss */
   .skills--container { width: 100%; float: left; margin-right: 0; #margin-right: -1.875em; display: inline; } }
 
-/* line 22, ../../sass/layouts/_skills.scss */
-.skills--skill { width: 17.64706%; float: left; margin-right: 9.80392%; display: inline; }
+/* line 15, ../../sass/layouts/_skills.scss */
+.skills--skill { width: 8.41121%; float: left; margin-right: 4.6729%; display: inline; }
 /* line 174, ../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.4/sass/susy/_grid.scss */
-.skills--skill:nth-child(4n) { float: left; margin-right: 0; }
-/* line 26, ../../sass/layouts/_skills.scss */
+.skills--skill:nth-child(8n) { float: left; margin-right: 0; }
+/* line 19, ../../sass/layouts/_skills.scss */
 .skills--skill > img { margin-top: 20px; margin-top: 2rem; }
 
 /* line 1, ../../sass/modules/_about.scss */
@@ -170,9 +165,6 @@ strong { font-weight: bold; }
 
 /* line 1, ../../sass/modules/_attributes.scss */
 .attributes { line-height: 30px; line-height: 3rem; }
-
-/* line 6, ../../sass/modules/_attributes.scss */
-.attributes--attribute { font-family: myriad-pro-condensed, myriad-pro-1, myriad-pro-2, "Myriad Pro Condensed Italic", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-style: italic; font-size: 20px; font-size: 2rem; }
 
 /* line 1, ../../sass/modules/_bio.scss */
 .bio { font-size: 10px; font-size: 1rem; line-height: 18px; line-height: 1.8rem; }

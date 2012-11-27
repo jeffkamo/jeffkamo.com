@@ -6,5 +6,6 @@
 
 .learning--graphic {
   float: left;
-  margin-right: calc-per(10px, 306px);
+  margin-right: $px-line-base;
+  margin-right: $rem-line-base;
 }
