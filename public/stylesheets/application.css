@@ -251,10 +251,12 @@ strong { font-weight: bold; }
 .projects--project > figcaption { -webkit-transition: opacity 0.5s ease-in, bottom 0.5s ease; -moz-transition: opacity 0.5s ease-in, bottom 0.5s ease; -o-transition: opacity 0.5s ease-in, bottom 0.5s ease; transition: opacity 0.5s ease-in, bottom 0.5s ease; background: white; border: 3px solid #707070; border-radius: 5px; opacity: 0; }
 /* line 14, ../../sass/modules/_projects.scss */
 .projects--project:hover > figcaption { opacity: 1; }
+/* line 18, ../../sass/modules/_projects.scss */
+.projects--project > a { border-bottom: none; }
 
-/* line 19, ../../sass/modules/_projects.scss */
+/* line 23, ../../sass/modules/_projects.scss */
 .projects--screenshot { -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; -o-transition: opacity 0.5s ease; transition: opacity 0.5s ease; background: white; border: 1px solid #d0d0d0; opacity: 0.6; }
-/* line 25, ../../sass/modules/_projects.scss */
+/* line 29, ../../sass/modules/_projects.scss */
 .projects--screenshot:hover { opacity: 1; }
 
 @media (max-width: 870px) { /* line 1, ../../sass/modules/_rising-sun.scss */
